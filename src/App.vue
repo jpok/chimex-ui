@@ -5,86 +5,42 @@
       v-model="drawer"
       v-if="$vuetify.breakpoint.mobile"         
       app>
-      <!-- <v-list-item>
-        <v-list-item-content>
-          <v-list-item-title class="text-h6">
-            Chimex
-          </v-list-item-title>
-          
-        </v-list-item-content>             
-
-      </v-list-item> -->
-
       <v-divider></v-divider>
 
-      <v-list
-        dense
-        nav
-      >
-        <v-list-item
-          v-for="item in items"
-          :key="item.title"
-          link
-        >
-          <v-list-item-icon>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-icon>
-
-          <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
     </v-navigation-drawer>
-
-     <v-card class="overflow-hidden">
-    <v-app-bar
+     
+    <v-app-bar         
       app
       absolute
       color="white"
       elevate-on-scroll
       scroll-target="#scrolling-techniques-7"
     >
-      
-      <v-app-bar-nav-icon
-        v-if="$vuetify.breakpoint.mobile"
-      >
-      </v-app-bar-nav-icon>      
-
-      <v-toolbar-title><v-img
+      <v-app-bar-title><v-img
           alt="Chimex Logo"          
           contain
           src="./assets/logo.png"
           transition="scale-transition"
           width="100"
-        /></v-toolbar-title>
-
-      <v-spacer></v-spacer>
-
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-heart</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
-      </v-btn>
+        /></v-app-bar-title>
+        
+        <v-spacer></v-spacer>
+        <nav>
+          <router-link class="pa-6" to="/">Home</router-link>
+          <router-link class="pa-6" to="/residential">Residential</router-link>
+          <router-link class="pa-6" to="/commercial">Commercial</router-link>
+        </nav>
+        <v-spacer></v-spacer>
     </v-app-bar>
     <v-sheet
       id="scrolling-techniques-7"
-      class="overflow-y-auto"
-      max-height="600"
+      class="overflow-y-auto"      
     >
-
-      <v-main>
-        <!--  -->
-      </v-main>
     
-    </v-sheet>
-    </v-card>
+      <v-main>            
+        <router-view></router-view>        
+      </v-main>
+    </v-sheet>    
   </v-app>
 </template>
 
@@ -104,3 +60,12 @@
     }),
   }
 </script>
+
+<style>
+ a { text-decoration: none; }
+ 
+ .exact-active {
+    color: var(--v-secondary-base) !important;
+    text-decoration: underline .25rem;
+  }
+</style>
