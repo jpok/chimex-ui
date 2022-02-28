@@ -1,6 +1,15 @@
 import Vue from 'vue';
 import Vuetify from 'vuetify/lib/framework';
+import resManPropertyIcon from '@/assets/icons/res-man-property-icon.vue'
+import warehouseIcon from '@/assets/icons/warehouse-icon.vue'
+import foodTruckIcon from '@/assets/icons/food-truck-icon.vue'
+import hotelIcon from '@/assets/icons/hotel-icon.vue'
+import storefrontIcon from '@/assets/icons/storefront-icon.vue'
+import mouseIcon from '@/assets/icons/mouse-icon.vue'
+import SequentialEntrance from 'vue-sequential-entrance'
+import 'vue-sequential-entrance/vue-sequential-entrance.css'
 
+Vue.use(SequentialEntrance);
 Vue.use(Vuetify);
 
 export default new Vuetify({
@@ -14,10 +23,34 @@ export default new Vuetify({
         secondary: '#21be96',
         accent: '#f4ce51',
         error: '#d2410e',
+        tint: '#F2FAFF'
       },
     },
   },
-  breakpoint: {
-    mobileBreakpoint: 'sm' // This is equivalent to a value of 960
-  },
+  icons: {    
+    values: {
+      resManPropertyIcon: {
+        component: resManPropertyIcon
+      },
+      warehouseIcon: {
+        component: warehouseIcon      
+      },
+      foodTruckIcon: {
+        component: foodTruckIcon      
+      },
+      hotelIcon: {
+        component: hotelIcon      
+      },
+      storefrontIcon: {
+        component: storefrontIcon      
+      },
+      mouseIcon: {
+        component: mouseIcon
+      }
+    },
+    breakpoint: {
+      mobileBreakpoint: 'sm' // This is equivalent to a value of 960
+    }
+  }
 });
+
