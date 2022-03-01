@@ -241,8 +241,7 @@
         <v-col md="5">
           <v-card
             class="pa-2"     
-            :elevation="$vuetify.breakpoint.mobile ? 0 : 2" 
-            :min-width="$vuetify.breakpoint.mobile ? 450: 500"
+            :elevation="$vuetify.breakpoint.mobile ? 0 : 2"           
             :min-height="$vuetify.breakpoint.mobile ? '15rem': '30rem'">
             <v-card-text>                        
               <div class="display-3 primary--text">Pests…?</div>

@@ -8,10 +8,9 @@
     </v-toolbar>
     <v-row>
     <v-spacer></v-spacer>
-      <v-btn v-if="$vuetify.breakpoint.mobile"
-        color="primary"
+      <v-btn v-if="$vuetify.breakpoint.mobile"        
         icon
-        class="ma-4"        
+        class="ma-4 dark-gray"        
         @click="close"               
       >
         <v-icon>mdi-close</v-icon>
