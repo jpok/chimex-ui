@@ -91,62 +91,74 @@
     <v-container fluid class="grey lighten-5 elevation-n1 rounded-lg">
       <sequential-entrance fromRight>     
       <v-row>
-      <v-col align="center">
-      <v-card      
-        height="25rem" 
-        width="20rem"
-        class="ma-5 pa-4 rounded-xl rounded-tl-0 rounded-br-0"                                  
-      >            
-        <v-row justify="center"><img width="150" src="@/assets/icons/prevent-icon.svg"></v-row>
-        <v-row justify="center"><v-card-title class="secondary--text">Preventative</v-card-title></v-row>
-        
-        <v-card-text class="text-subtitle-1 primary--text text-center">
+      
+      <v-col md="3" align="center">
+
+      <v-card                         
+        min-width="20rem"
+        min-height="22rem"
+        class="rounded-xl pa-8 mx-auto rounded-tl-0 rounded-br-0"                                  
+      >                                            
+        <v-img  max-width="120px" src="@/assets/icons/prevent-icon.svg"></v-img>
+        <div class="primary--text pa-2 text-h6 font-weight-light">Preventative</div>
+
+        <div class="justify-center text-subtitle-2 dark-gray font-weight-light">
           The best time to stop a pest problem is before it begins. Chimex Eco-Pest’s preventative maintenance will keep pests out of your home and off your property guaranteed
-        </v-card-text>
+        </div>                              
+      
       </v-card>  
+
       </v-col>
-      <v-col align="center">
-       <v-card       
-        height="25rem"
-        width="20rem"
-        class="ma-5 pa-4 rounded-xl rounded-tl-0 rounded-br-0"                                   
-      >            
-        <v-row justify="center"><img width="150" src="@/assets/icons/infestation-icon.svg"></v-row>
-        <v-row justify="center"><v-card-title class="secondary--text">Infestation</v-card-title></v-row>
-        
-        <v-card-text class="text-subtitle-1 primary--text text-center">
+      
+      <v-col md="3" align="center">
+       
+        <v-card                         
+        min-width="20rem"
+        min-height="22rem"
+        class="rounded-xl pa-8 mx-auto rounded-tl-0 rounded-br-0"                                  
+      >                                            
+        <v-img  max-width="120px" src="@/assets/icons/infestation-icon.svg"></v-img>
+        <div class="primary--text pa-2 text-h6 font-weight-light">Preventative</div>
+
+        <div class="justify-center text-subtitle-2 dark-gray font-weight-light">
           No matter how bad it’s got, Chimex has you covered. Our certified service technicians will not only get rid of your household pests, but keep them from coming back
-        </v-card-text>
+        </div>                              
+      
       </v-card>  
+
       </v-col>                   
 
-      <v-col align="center">
-       <v-card       
-        height="25rem"
-        width="20rem"
-        class="ma-5 pa-4 rounded-xl rounded-tl-0 rounded-br-0"                               
-      >            
-        <v-row justify="center"><img width="150" src="@/assets/icons/mosquito-icon.svg"></v-row>
-        <v-row justify="center"><v-card-title class="secondary--text">Mosquito</v-card-title></v-row>
-        
-        <v-card-text class="text-subtitle-1 primary--text text-center">
-          Don’t let mosquitoes suck all the fun out of your yard. At Chimex Eco-Pest we take care of your mosquitoes by eliminating them on your property and at the source
-        </v-card-text>
+      <v-col md="3" align="center">
+
+        <v-card                         
+        min-width="20rem"
+        min-height="22rem"
+        class="rounded-xl pa-8 mx-auto rounded-tl-0 rounded-br-0"                                  
+      >                                            
+        <v-img  max-width="120px" src="@/assets/icons/mosquito-icon.svg"></v-img>
+        <div class="primary--text pa-2 text-h6 font-weight-light">Mosquitoes</div>
+
+        <div class="justify-center text-subtitle-2 dark-gray font-weight-light">
+           Don’t let mosquitoes suck all the fun out of your yard. At Chimex Eco-Pest we take care of your mosquitoes by eliminating them on your property and at the source
+        </div>                              
+      
       </v-card>  
-      </v-col>
-      <v-col align="center">
-       <v-card   
-        height="25rem"    
-        width="20rem"
-        class="ma-5 pa-4 rounded-xl rounded-tl-0 rounded-br-0"                                    
-      >            
-        <v-row justify="center"><img width="150" src="@/assets/icons/ant-icon.svg"></v-row>
-        <v-row justify="center"><v-card-title class="secondary--text">Pest</v-card-title></v-row>
-        
-        <v-card-text class="text-subtitle-1 primary--text text-center">
-          Keeping pests at bay is what we do. Whether it’s just a few ants or a full on cockroach invasion, Chimex Eco-Pest will make and keep your home pest free 
-        </v-card-text>
-      </v-card>  
+       
+      </v-col >
+      <v-col md="3" align="center">
+        <v-card                         
+        min-width="20rem"
+        min-height="22rem"
+        class="rounded-xl pa-8 mx-auto rounded-tl-0 rounded-br-0"                                  
+        >                                            
+        <v-img  max-width="120px" src="@/assets/icons/ant-icon.svg"></v-img>
+        <div class="primary--text pa-2 text-h6 font-weight-light">Mosquitoes</div>
+
+        <div class="justify-center text-subtitle-2 dark-gray font-weight-light">
+           Keeping pests at bay is what we do. Whether it’s just a few ants or a full on cockroach invasion, Chimex Eco-Pest will make and keep your home pest free 
+        </div>                              
+      
+      </v-card>           
       </v-col>
       </v-row>
       </sequential-entrance>
@@ -257,7 +269,7 @@
           <v-card        
               height="170"
               width="170"  
-             class="pa-2 ma-4"                               
+              class="pa-2 ma-4"                               
             >
             <div class="green-border">
             <v-row class="pa-2" justify="center">              
