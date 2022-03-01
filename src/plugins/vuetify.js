@@ -48,8 +48,7 @@ export default new Vuetify({
         component: mouseIcon
       }
     },
-    breakpoint: {
-      mobileBreakpoint: 'sm' // This is equivalent to a value of 960
+    breakpoint: {      
     }
   }
 });

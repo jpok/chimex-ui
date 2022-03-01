@@ -140,7 +140,7 @@ import ChimexFooter from '@/components/ChimexFooter.vue'
 }
 
 .fade { 
-    opacity: 80%;
+    /* opacity: 80%; */
 }
 
 .slidein {

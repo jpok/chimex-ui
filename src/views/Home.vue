@@ -44,17 +44,19 @@
         <v-container v-if="!$vuetify.breakpoint.mobile">
           <div class="left-text-container primary--text">
             <!-- <div class="font-weight-light text-h3 pb-8"><span style="text-decoration: underline">Our mission</span> is to provide </div> -->
-            <div class="font-weight-light pl-6 pb-4 text-h4">high quality pest control services</div>
-            <div class="font-italic  font-weight-light text-h5 pl-6">
+            <div class="font-weight-light pl-6 pb-4 text-h5">high quality pest control services</div>
+            <div class="font-italic  font-weight-light text-h6 pl-6">
               with a low environmental impact
             </div>
           </div>
           <div class="center-text-container text-center white--text">
-            <div class="text-h5 font-weight-light"> We are committed to protecting our customer’s homes from pests without compromising our commitment to preserve the natural environment all living creatures share</div> 
+            <div class="text-subtitle-2 font-weight-light"> We are committed to protecting our customer’s homes from pests without compromising our commitment to preserve the natural environment all living creatures share</div> 
           </div>
           
-          <div class="right-text-container font-weight-light text-subtitle-1 text-right primary--text">
-            The Chimex team understands that a pest free household is crucial to a happy and healthy home for you and your family. Chimex Eco-Pest uses only the most effective products and techniques so that the only time you’ll have to think about pests is when we’re servicing your home.
+          <div class="right-text-container">
+            <div class="font-weight-light text-subtitle-1 text-right primary--text">
+              The Chimex team understands that a pest free household is crucial to a happy and healthy home for you and your family. Chimex Eco-Pest uses only the most effective products and techniques so that the only time you’ll have to think about pests is when we’re servicing your home.
+            </div>
           </div>
         </v-container>
       </div>
@@ -92,11 +94,11 @@
       <sequential-entrance fromRight>     
       <v-row>
       
-      <v-col md="3" align="center">
+      <v-col sm="6" md="3" align="center">
 
       <v-card                         
-        min-width="20rem"
-        min-height="22rem"
+        min-width="15rem"
+        min-height="25rem"
         class="rounded-xl pa-8 mx-auto rounded-tl-0 rounded-br-0"                                  
       >                                            
         <v-img  max-width="120px" src="@/assets/icons/prevent-icon.svg"></v-img>
@@ -110,11 +112,11 @@
 
       </v-col>
       
-      <v-col md="3" align="center">
+      <v-col sm="6" md="3" align="center">
        
         <v-card                         
-        min-width="20rem"
-        min-height="22rem"
+        min-width="15rem"
+        min-height="25rem"
         class="rounded-xl pa-8 mx-auto rounded-tl-0 rounded-br-0"                                  
       >                                            
         <v-img  max-width="120px" src="@/assets/icons/infestation-icon.svg"></v-img>
@@ -128,11 +130,11 @@
 
       </v-col>                   
 
-      <v-col md="3" align="center">
+      <v-col sm="6" md="3" align="center">
 
         <v-card                         
-        min-width="20rem"
-        min-height="22rem"
+        min-width="15rem"
+        min-height="25rem"
         class="rounded-xl pa-8 mx-auto rounded-tl-0 rounded-br-0"                                  
       >                                            
         <v-img  max-width="120px" src="@/assets/icons/mosquito-icon.svg"></v-img>
@@ -145,10 +147,10 @@
       </v-card>  
        
       </v-col >
-      <v-col md="3" align="center">
+      <v-col sm="6" md="3" align="center">
         <v-card                         
-        min-width="20rem"
-        min-height="22rem"
+        min-width="15rem"
+        min-height="25rem"
         class="rounded-xl pa-8 mx-auto rounded-tl-0 rounded-br-0"                                  
         >                                            
         <v-img  max-width="120px" src="@/assets/icons/ant-icon.svg"></v-img>
@@ -177,22 +179,25 @@
     <v-row 
       justify="center"
       class="ma-10">
-      <v-container class="center text-h5 dark-gray text-center font-weight-light">At Chimex we understand you want to enjoy a pest free home without pesty sign up. Simply request a quote and a member of our team will reach out to take care of the rest. It’s as easy as booking and letting one of our certified technicians take care of the rest. 
+      <v-container class="center md-text-h5 dark-gray text-center font-weight-light">
+        At Chimex we understand you want to enjoy a pest free home without pesty sign up. Simply request a quote and a member of our team will reach out to take care of the rest. It’s as easy as booking and letting one of our certified technicians take care of the rest. 
       </v-container>
     </v-row>
 
     <v-row      
       justify="center">
-         <v-img max-width="50rem" v-if="!$vuetify.breakpoint.mobile" class="mb-n16" src="@/assets/curvey-line.png"></v-img>
+         <v-img max-width="50rem" class="d-none d-md-block mb-n16" src="@/assets/curvey-line.png"></v-img>
     </v-row>
 
     <v-row 
       :justify="'center'"
       class="ma-10">      
+
+      <v-col>
         <v-card              
         class="ma-5 tint"             
-        width="25rem"
-        height="25rem"
+        min-width="15rem"
+        min-height="25rem"
         >            
        <v-row justify="center">         
          <v-img class="mt-n16" max-width="15rem" src="@/assets/book-step.png"></v-img>
@@ -203,11 +208,13 @@
           Request a quote and one of our team members will reach out the same day to schedule your appointment time. 
         </v-card-text>
       </v-card>  
+      </v-col>
 
+      <v-col>
       <v-card              
         class="ma-5 tint"             
-        width="25rem"
-        height="25rem"
+        min-width="15rem"
+        min-height="25rem"
         >            
        <v-row justify="center">         
          <v-img class="mt-n16" max-width="15rem" src="@/assets/clean-step.png"></v-img>
@@ -218,11 +225,13 @@
           One of our certified technicians will come to you and complete a full inspection before treating your entire property both inside and outside. 
         </v-card-text>
       </v-card>  
+      </v-col>
 
+      <v-col>
       <v-card              
         class="ma-5 tint"             
-        width="25rem"
-        height="25rem"
+        min-width="15rem"
+        min-height="25rem"
         >            
        <v-row justify="center">         
          <v-img class="mt-n16" max-width="15rem" src="@/assets/home-step.png"></v-img>
@@ -233,6 +242,7 @@
           Enjoy your pest free property!
         </v-card-text>
       </v-card>  
+      </v-col>
 
     </v-row>
     </v-container>
@@ -241,41 +251,50 @@
 
     <v-row 
       v-if="!$vuetify.breakpoint.mobile"
-      :justify="'center'"
+      justify="center"
       class="ma-10">
       <div class="primary--text text-h3">Pest Library</div>      
     </v-row>
      <v-container fluid v-bind:class="[!$vuetify.breakpoint.mobile ? 'grey lighten-5 elevation-n1' : '']">
         
-      <v-row align="center">   
+      <v-row justify="space-around" align="center">   
           
-          <v-spacer></v-spacer>
-        <v-col md="5">
-          <v-card
-            class="pa-2"     
-            :elevation="$vuetify.breakpoint.mobile ? 0 : 2"           
-            :min-height="$vuetify.breakpoint.mobile ? '15rem': '30rem'">
-            <v-card-text>                        
-              <div class="display-3 primary--text">Pests…?</div>
-              <div class="display-2 secondary--text font-italic font-weight-light mt-6">We got you covered</div>
-              <div class="text-subtitle-1 mt-12 font-weight-light">From Palmetto Bugs to Paper Wasps Chimex Eco-Pest knows that there are a wide variety of pests that call South Carolina home year round. Take a look at our pest library to see what kinds of pests are trying to make your home theirs. If you recognize a bug at home that’s not in our library please reach out and one of our certified technicians will be able to identify it for you! </div>
-            </v-card-text>      
-          </v-card>        
-        </v-col>
-
         <v-spacer></v-spacer>
+        
+        <v-col cols="12" sm="12" md="4">
+          
+          <v-card
+            class="pa-4"     
+            :elevation="$vuetify.breakpoint.mobile ? 0 : 2"           
+            :min-height="$vuetify.breakpoint.mobile ? '15rem': '30rem'">                                   
+              <div class="text-h4 text-md-flex-h2 primary--text">Pests…?</div>
+              <div 
+                class="
+                  text-h6 
+                  secondary--text
+                  text-sm-h5
+                  text-md-flex-h3                                                          
+                  font-italic 
+                  font-weight-light">We got you covered</div>
+              <div class="text-subtitle-1 dark-gray mt-12 font-weight-light">From Palmetto Bugs to Paper Wasps Chimex Eco-Pest knows that there are a wide variety of pests that call South Carolina home year round. Take a look at our pest library to see what kinds of pests are trying to make your home theirs. If you recognize a bug at home that’s not in our library please reach out and one of our certified technicians will be able to identify it for you! 
+              </div>            
+          </v-card>                
+        </v-col>
+        <v-spacer></v-spacer>
+        
 
-        <v-col>
+        <v-col sm="12" md="7" lg="6">
+          <v-row justify="center">
           <v-card        
-              height="170"
-              width="170"  
+              height="130"
+              width="130"  
               class="pa-2 ma-4"                               
             >
             <div class="green-border">
             <v-row class="pa-2" justify="center">              
               <img height="90/" class="pb-0 pt-2" src="@/assets/icons/ant-icon.svg">
 
-              <v-card-text class="pt-0 dark-gray text-center">                        
+              <v-card-text class=" dark-gray text-center">                        
               Pavement Ant
               <br>
               <br>
@@ -285,15 +304,15 @@
           </v-card>    
 
           <v-card        
-              height="170"
-              width="170"  
+              height="130"
+              width="130"  
              class="pa-2 ma-4"                               
             >
             <div class="green-border">
             <v-row class="pa-2" justify="center">              
-              <img height="90/" class="pb-0 pt-2" src="@/assets/icons/fire-ant-icon.svg">
+              <img height="90" class="pb-0 pt-2" src="@/assets/icons/fire-ant-icon.svg">
 
-              <v-card-text class="pt-0 dark-gray text-center">                        
+              <v-card-text class=" dark-gray text-center">                        
               Fire Ant
               <br>
               <br>
@@ -303,15 +322,15 @@
           </v-card>  
 
             <v-card        
-              height="170"
-              width="170"  
+              height="130"
+              width="130"  
              class="pa-2 ma-4"                               
             >
             <div class="green-border">
             <v-row class="pa-2" justify="center">              
-              <img height="90/" class="pb-0 pt-2" src="@/assets/icons/carpenter-ant-icon.svg">
+              <img height="90" class="pb-0 pt-2" src="@/assets/icons/carpenter-ant-icon.svg">
 
-              <v-card-text class="pt-0 dark-gray text-center">                        
+              <v-card-text class=" dark-gray text-center">                        
               Carpenter Ant
               <br>
               <br>
@@ -322,14 +341,14 @@
 
             <v-card
              class="pa-2 ma-4" 
-             height="170"                              
-             width="170"
+             height="130"                              
+             width="130"
             >
             <div class="green-border">
             <v-row class="pa-2" justify="center">              
               <img height="90" class="pb-0 pt-2" src="@/assets/icons/fish-bug-icon.svg">
 
-              <v-card-text class="pt-0 dark-gray text-center">                        
+              <v-card-text class=" dark-gray text-center">                        
               Silverfish
               <br>
               <br>
@@ -340,34 +359,32 @@
 
           <v-card
              class="pa-2 ma-4" 
-             height="170"                              
-             width="170"
+             height="130"                              
+             width="130"
             >
             <div class="green-border">
             <v-row class="pa-2" justify="center">              
               <img height="90" class="pb-0 pt-2" src="@/assets/icons/fish-bug-icon.svg">
 
-              <v-card-text class="pt-0 dark-gray text-center">                        
+              <v-card-text class=" dark-gray text-center">                        
               Silverfish
               <br>
               <br>
             </v-card-text>      
             </v-row>       
             </div>                 
-          </v-card>
-        </v-col>
-
-        <v-col>
+          </v-card>        
+        
           <v-card
              class="pa-2 ma-4" 
-             height="170"                              
-             width="170"
+             height="130"                              
+             width="130"
             >
             <div class="green-border">
             <v-row class="pa-2" justify="center">              
               <img height="90" class="pb-0 pt-2" src="@/assets/icons/bee-icon.svg">
 
-              <v-card-text class="pt-0 dark-gray text-center">                        
+              <v-card-text class=" dark-gray text-center">                        
               Bee
               <br>
               <br>
@@ -378,14 +395,14 @@
 
             <v-card
              class="pa-2 ma-4" 
-             height="170"                              
-             width="170"
+             height="130"                              
+             width="130"
             >
             <div class="green-border">
             <v-row class="pa-2" justify="center">              
               <img height="90" class="pb-0 pt-2" src="@/assets/icons/hornet-icon.svg">
 
-              <v-card-text class="pt-0 dark-gray text-center">                        
+              <v-card-text class=" dark-gray text-center">                        
               Hornet
               <br>
               <br>
@@ -396,14 +413,14 @@
 
             <v-card
              class="pa-2 ma-4" 
-             height="170"                              
-             width="170"
+             height="130"                              
+             width="130"
             >
             <div class="green-border">
             <v-row class="pa-2" justify="center">              
               <img height="90" class="pb-0 pt-2" src="@/assets/icons/wasp-icon.svg">
 
-              <v-card-text class="pt-0 dark-gray text-center">                        
+              <v-card-text class=" dark-gray text-center">                        
               Wasp
               <br>
               <br>
@@ -414,14 +431,14 @@
 
             <v-card
              class="pa-2 ma-4" 
-             height="170"                              
-             width="170"
+             height="130"                              
+             width="130"
             >
             <div class="green-border">
             <v-row class="pa-2" justify="center">              
               <img height="90" class="pb-0 pt-2" src="@/assets/icons/mosquito-icon.svg">
 
-              <v-card-text class="pt-0 dark-gray text-center">                        
+              <v-card-text class=" dark-gray text-center">                        
               Mosquito
               <br>
               <br>
@@ -432,14 +449,14 @@
 
             <v-card
              class="pa-2 ma-4" 
-             height="170"                              
-             width="170"
+             height="130"                              
+             width="130"
             >
             <div class="green-border">
             <v-row class="pa-2" justify="center">              
               <img height="90" class="pb-0 pt-2" src="@/assets/icons/rat-icon.svg">
 
-              <v-card-text class="pt-0 dark-gray text-center">                        
+              <v-card-text class=" dark-gray text-center">                        
               Rat
               <br>
               <br>
@@ -448,19 +465,17 @@
             </div>                 
           </v-card>             
 
-        </v-col>
-   
-        <v-col>
+        
           <v-card
              class="pa-2 ma-4" 
-             height="170"                              
-             width="170"
+             height="130"                              
+             width="130"
             >
             <div class="green-border">
             <v-row class="pa-2" justify="center">              
               <img height="90" class="pb-0 pt-2" src="@/assets/icons/cockroach-icon.svg">
 
-              <v-card-text class="pt-0 dark-gray text-center">                        
+              <v-card-text class=" dark-gray text-center">                        
               Cockroach
               <br>
               <br>
@@ -470,14 +485,14 @@
           </v-card>
           <v-card
              class="pa-2 ma-4" 
-             height="170"                              
-             width="170"
+             height="130"                              
+             width="130"
             >
             <div class="green-border">
             <v-row class="pa-2" justify="center">              
               <img height="90" class="pb-0 pt-2" src="@/assets/icons/beetle-icon.svg">
 
-              <v-card-text class="pt-0 dark-gray text-center">                        
+              <v-card-text class=" dark-gray text-center">                        
               Beetle
               <br>
               <br>
@@ -488,14 +503,14 @@
 
             <v-card
              class="pa-2 ma-4" 
-             height="170"                              
-             width="170"
+             height="130"                              
+             width="130"
             >
             <div class="green-border">
             <v-row class="pa-2" justify="center">              
               <img height="90" class="pb-0 pt-2" src="@/assets/icons/mouse-icon.svg">
 
-              <v-card-text class="pt-0 dark-gray text-center">                        
+              <v-card-text class=" dark-gray text-center">                        
               Mouse
               <br>
               <br>
@@ -506,14 +521,14 @@
 
             <v-card
              class="pa-2 ma-4" 
-             height="170"                              
-             width="170"
+             height="130"                              
+             width="130"
             >
             <div class="green-border">
             <v-row class="pa-2" justify="center">              
               <img height="90" class="pb-0 pt-2" src="@/assets/icons/black-widow-icon.svg">
 
-              <v-card-text class="pt-0 dark-gray text-center">                        
+              <v-card-text class=" dark-gray text-center">                        
               Black Widow
               <br>
               <br>
@@ -524,14 +539,14 @@
 
           <v-card
              class="pa-2 ma-4" 
-             height="170"                              
-             width="170"
+             height="130"                              
+             width="130"
             >
             <div class="green-border">
             <v-row class="pa-2" justify="center">              
               <img height="90" class="pb-0 pt-2" src="@/assets/icons/spider-icon.svg">
 
-              <v-card-text class="pt-0 dark-gray text-center">                        
+              <v-card-text class=" dark-gray text-center">                        
               Spider
               <br>
               <br>
@@ -539,20 +554,19 @@
             </v-row>       
             </div>                 
           </v-card>          
-
-        </v-col>
         
-        <v-col>
+        
+        
           <v-card
              class="pa-2 ma-4" 
-             height="170"                              
-             width="170"
+             height="130"                              
+             width="130"
             >
             <div class="green-border">
             <v-row class="pa-2" justify="center">              
               <img height="90" class="pb-0 pt-2" src="@/assets/icons/fly-icon.svg">
 
-              <v-card-text class="pt-0 dark-gray text-center">                        
+              <v-card-text class=" dark-gray text-center">                        
               House Fly
               <br>
               <br>
@@ -563,14 +577,14 @@
           
           <v-card
              class="pa-2 ma-4" 
-             height="170"                              
-             width="170"
+             height="130"                              
+             width="130"
             >
             <div class="green-border">
             <v-row class="pa-2" justify="center">              
               <img height="90" class="pb-0 pt-2" src="@/assets/icons/fruit-fly-icon.svg">
 
-              <v-card-text class="pt-0 dark-gray text-center">                        
+              <v-card-text class=" dark-gray text-center">                        
               Fruit Fly
               <br>
               <br>
@@ -581,14 +595,14 @@
 
             <v-card
              class="pa-2 ma-4" 
-             height="170"                              
-             width="170"
+             height="130"                              
+             width="130"
             >
             <div class="green-border">
             <v-row class="pa-2" justify="center">              
               <img height="90" class="pb-0 pt-2" src="@/assets/icons/moth-icon.svg">
 
-              <v-card-text class="pt-0 dark-gray text-center">                        
+              <v-card-text class=" dark-gray text-center">                        
               Moth
               <br>
               <br>
@@ -599,14 +613,14 @@
 
           <v-card
              class="pa-2 ma-4" 
-             height="170"                              
-             width="170"
+             height="130"                              
+             width="130"
             >
             <div class="green-border">
             <v-row class="pa-2" justify="center">              
               <img height="90" class="pb-0 pt-2" src="@/assets/icons/tick-icon.svg">
 
-              <v-card-text class="pt-0 dark-gray text-center">                        
+              <v-card-text class="pa-0 dark-gray text-center">                        
               Tick
               <br>
               <br>
@@ -617,14 +631,14 @@
 
           <v-card
              class="pa-2 ma-4" 
-             height="170"                              
-             width="170"
+             height="130"                              
+             width="130"
             >
             <div class="green-border">
             <v-row class="pa-2" justify="center">              
               <img height="90" class="pb-0 pt-2" src="@/assets/icons/weevile-icon.svg">
 
-              <v-card-text class="pt-0 dark-gray text-center">                        
+              <v-card-text class=" dark-gray text-center">                        
               Weevile
               <br>
               <br>
@@ -632,20 +646,10 @@
             </v-row>       
             </div>                 
           </v-card>
-        </v-col>
-
-        <!-- <v-col v-for="n in 5" :key="n"> 
-          <v-row justify="center" v-for="j in 5" :key="j" class="pa-4">
-            <v-card                               
-            >
-            <v-icon color="secondary" size="4rem">$mouseIcon</v-icon>
-            <v-card-text>                        
-              Mouse
-            </v-card-text>      
-          </v-card>        
           </v-row>
-        </v-col> -->
+        </v-col>         
 
+    
       </v-row>
      </v-container>
 
@@ -682,20 +686,16 @@ import ChimexFooter from '@/components/ChimexFooter.vue'
     animation: float 6s ease-in-out infinite;
   }
 
-  .green-border {
-    border: .2rem solid var(--v-secondary-base) !important;
-    padding: .25rem;        
-  }
+  /* .green-border { 
+    outline: 10px solid var(--v-secondary-base) !important;
+    outline-offset: -30px;
+    box-sizing: border-box;
+  } */
 
   .image-container{    
     position: relative;    
   }
 
-  .grass-and-rocks {
-    position: absolute;
-    top:80%;
-    left: 0%;      
-  }
 
 .left-text-container {    
     position: absolute;
@@ -712,9 +712,10 @@ import ChimexFooter from '@/components/ChimexFooter.vue'
 
   .right-text-container {    
     position: absolute;
+    margin-right: 2rem;
     top:3%;
     left: 65%;
-    width: 35rem;
+    max-width: 35rem;
     /* transform: translate(-50%, -50%);     */
   }
 
