@@ -6,8 +6,18 @@
       >
       Request a quote
     </v-toolbar>
-  <form @submit.prevent="sendEmail" class="pa-12">
-              
+    <v-row>
+    <v-spacer></v-spacer>
+      <v-btn v-if="$vuetify.breakpoint.mobile"
+        color="primary"
+        icon
+        class="ma-4"        
+        @click="close"               
+      >
+      mdi-close
+      </v-btn>
+      </v-row>
+  <form @submit.prevent="sendEmail" class="pa-12">              
     <label>Name</label>
     <v-text-field 
       required      
@@ -71,6 +81,7 @@
       <v-btn @click="clear">
         clear
       </v-btn>
+      
       </v-row>
   </form>
 </v-card>
@@ -100,7 +111,12 @@ methods: {
         'user_2BbvsyWgj5hfnIXahvEpw');        
         this.clear()
         this.$emit('close-dialog')        
-      },                      
+      },    
+      
+      close() {
+        this.$emit('close-dialog')        
+      },
+      
       clear () {        
         this.name = ''
         this.email = ''

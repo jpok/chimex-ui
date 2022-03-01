@@ -16,21 +16,22 @@
    </v-row>
 
 <v-sheet class="grey lighten-5" v-bind:class="[$vuetify.breakpoint.mobile ? '' : 'elevation-n1']">  
-   <v-row 
+   <v-row    
     align="center"    
-    justify="space-around">
+    justify="space-around"
+    >
       <v-col  md="6">
-      <v-sheet elevation="4">
-      <v-tabs>
+      <v-sheet :elevation="!$vuetify.breakpoint.mobile ? 3 : 0">
+      <v-tabs class="pa-2">
         <v-tab class="text-subtitle-1">Inspection</v-tab>
           <v-tab-item>
             <v-card
             flat
             min-height="20rem"                        
             >
-          <v-row>
+          <v-row align="center">
             <v-col md="8">
-              <v-card-text class="text-subtitle-1">Before beginning the pesticide application, a licensed Chimex technician takes the time to fully inspect the interior and exterior of your property. Identifying pest hotspots and entry points to provide the best treatment for your unique home and property. </v-card-text>
+              <v-card-text class="dark-gray text-subtitle-1">Before beginning the pesticide application, a licensed Chimex technician takes the time to fully inspect the interior and exterior of your property. Identifying pest hotspots and entry points to provide the best treatment for your unique home and property. </v-card-text>
             </v-col>
             <v-col>
               <v-img class="ma-4" eager transition="scale-transition" src="@/assets/inspect.png" max-width="10rem"></v-img>      
@@ -45,9 +46,9 @@
             flat
             min-height="20rem"   
             >
-              <v-row>
+              <v-row align="center">
             <v-col md="8">
-          <v-card-text class="text-subtitle-1">At Chimex we believe that you know your home best. That's why we work with you to locate the areas inside your home where pests invade. We treat those areas directly, providing effective and long lasting protection that's pet and kid friendly.</v-card-text>
+          <v-card-text class="text-subtitle-1 dark-gray">At Chimex we believe that you know your home best. That's why we work with you to locate the areas inside your home where pests invade. We treat those areas directly, providing effective and long lasting protection that's pet and kid friendly.</v-card-text>
                 </v-col>
             <v-col>
               <v-img class="ma-4" eager transition="scale-transition" src="@/assets/living-room.png" max-width="10rem"></v-img>      
@@ -61,9 +62,9 @@
             flat
             min-height="20rem"   
             >
-                   <v-row>
+            <v-row align="center">
             <v-col md="8">
-          <v-card-text class="text-subtitle-1">Chimex Eco-Pest believes that a good defense is the best offense. By giving your home’s foundation a full barrier treatment we keep the pests out of your home and off your mind.
+          <v-card-text class="text-subtitle-1 dark-gray">Chimex Eco-Pest believes that a good defense is the best offense. By giving your home’s foundation a full barrier treatment we keep the pests out of your home and off your mind.
           </v-card-text>
                </v-col>
             <v-col>
@@ -78,9 +79,9 @@
             flat
             min-height="20rem"   
             >
-                       <v-row>
+          <v-row align="center">
             <v-col md="8">
-          <v-card-text class="text-subtitle-1">Chimex Eco-Pest knows that outdoor living spaces are an important part of your home. That's why we do a full yard treatment that keeps the stingers, clingers and biters from ruining all the fun the outdoors has to offer. </v-card-text>
+          <v-card-text class="text-subtitle-1 dark-gray">Chimex Eco-Pest knows that outdoor living spaces are an important part of your home. That's why we do a full yard treatment that keeps the stingers, clingers and biters from ruining all the fun the outdoors has to offer. </v-card-text>
                  </v-col>
             <v-col>
               <v-img class="ma-4" eager transition="scale-transition" src="@/assets/yard.png" max-width="10rem"></v-img>      
@@ -92,24 +93,21 @@
       </v-sheet>
       </v-col>
       
-      <v-img class="ma-4" eager transition="scale-transition" src="@/assets/residential-1.png" max-width="35rem"></v-img>      
+      <v-img :max-width="$vuetify.breakpoint.mobile ? $vuetify.breakpoint.width - 50: '35rem'" class="ma-4" eager transition="scale-transition" src="@/assets/residential-1.png"></v-img>      
       
    </v-row>
 </v-sheet>
    
-  <v-row justify="center" class="ma-12 primary--text text-h3 font-weight-light">Our Promise</v-row>        
+  <v-row justify="center" v-bind:class="[$vuetify.breakpoint.mobile ? 'display-1' : 'display-3']" class="ma-12 primary--text font-weight-light">Our Promise</v-row>        
             
-  <v-row justify="center" class="ma-4 text-h6 text-center font-weight-light">Chimex Eco-Pest is committed to keeping the pests out and you satisfied. If you’re still seeing even the occasional pest after we treat your home, call us back for a free re-service. We guarantee our work and its results.</v-row>        
+  <v-row justify="center" class="ma-4 dark-gray text-h6 text-center font-weight-light">Chimex Eco-Pest is committed to keeping the pests out and you satisfied. If you’re still seeing even the occasional pest after we treat your home, call us back for a free re-service. We guarantee our work and its results.</v-row>        
     
     <div class="gr-container mt-12">                
         <v-img max-height="25rem" class="mt-4 fade" src="@/assets/inspection-site.jpeg"></v-img>
-        <v-img class="gr" src="@/assets/satisfaction-badge.png" max-width="40rem"></v-img>
+        <v-img class="gr" src="@/assets/satisfaction-badge.png" :max-width="$vuetify.breakpoint.mobile ? $vuetify.breakpoint.width - 100: '40rem'"></v-img>
     </div>    
-
-  <v-img src="@/assets/map.png">
-    <div class="display-2 ma-4 white--text">Our Geo</div>
-  </v-img>   
   
+  <v-img src="@/assets/map.png" :max-width="$vuetify.breakpoint.width" max-height="20rem"></v-img>
   <chimex-footer></chimex-footer>
 
 </v-container>

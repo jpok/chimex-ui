@@ -3,16 +3,16 @@
         <div class="img-container">
             <v-img eager transition="fade-transition" max-height="35rem" class="darken" src="@/assets/commercial-1.jpeg">              
             </v-img>
-            <div class="centered text-h4 white--text">Commercial Pest Control for South Carolina</div>        
+            <div v-bind:class="[$vuetify.breakpoint.mobile ? 'text-h5 text-center' : 'text-h4']" class="centered white--text">Commercial Pest Control for South Carolina</div>        
         </div>  
         
-        <v-row justify="center" class="ma-12 primary--text text-h3 font-weight-light">Pest Control Customized for Your Business</v-row>
+        <v-row justify="center" v-bind:class="[$vuetify.breakpoint.mobile ? 'display-1 text-center' : 'display-3']" class="ma-12 primary--text font-weight-light">Pest Control Customized for Your Business</v-row>
 
             <v-row 
             justify="center"
             class="ma-10">                
             <v-col  md="8">
-            <div class="text-center text-h6 font-weight-light">
+            <div class="text-center dark-gray text-h6 font-weight-light">
                 Chimex Eco-Pest knows that having unwelcome pests in your place of business can not only make your customers feel uneasy, but can also hurt your bottom line. Because every commercial space and business owner’s needs are different, Chimex offers a customized approach to making and keeping your business property pest free. Contact us today and one of our certified technicians will work with you to create and implement a pest management solution. Don’t let pests get in the way of your profits. With Chimex’s commercial services you can go about your business confident that you won’t be interrupted by any unwanted visitors. 
             </div>
             </v-col>
@@ -45,7 +45,7 @@
         </v-sheet>
 
         
-            <v-row justify="center" class="ma-12 primary--text text-h3 font-weight-light">Commercial Properties we Service</v-row>
+            <v-row justify="center" v-bind:class="[$vuetify.breakpoint.mobile ? 'display-1 text-center' : 'display-3']" class="ma-12 primary--text font-weight-light">Commercial Properties we Service</v-row>
 
             <v-row justify="center">
                 <v-card   
@@ -119,21 +119,17 @@
             </v-card>  
         </v-row>        
         
-        <v-row justify="center" class="ma-12 primary--text text-h3 font-weight-light">Our Promise</v-row>        
+        <v-row justify="center" v-bind:class="[$vuetify.breakpoint.mobile ? 'display-1' : 'display-3']" class="ma-12 primary--text font-weight-light">Our Promise</v-row>        
                 
-        <v-row justify="center" class="ma-4 text-h6 text-center font-weight-light">Chimex Eco-Pest is committed to keeping the pests out and you satisfied. If you’re still seeing even the occasional pest after we treat your home, call us back for a free re-service. We guarantee our work and its results.</v-row>        
+        <v-row justify="center" class="ma-4 text-h6 dark-gray text-center font-weight-light">Chimex Eco-Pest is committed to keeping the pests out and you satisfied. If you’re still seeing even the occasional pest after we treat your home, call us back for a free re-service. We guarantee our work and its results.</v-row>        
         
         <div class="gr-container mt-12">                
             <v-img max-height="25rem" class="mt-4 fade" src="@/assets/commercial-2.jpeg"></v-img>
-            <v-img class="gr" src="@/assets/satisfaction-badge.png" max-width="40rem"></v-img>
+            <v-img class="gr" src="@/assets/satisfaction-badge.png" :max-width="$vuetify.breakpoint.mobile ? $vuetify.breakpoint.width - 100: '40rem'"></v-img>
         </div>
 
-
-        <v-img src="@/assets/map.png">
-        <div class="display-2 ma-4 white--text">Our Geo</div>
-        </v-img>   
-  
-        <chimex-footer></chimex-footer>
+    <v-img src="@/assets/map.png" :max-width="$vuetify.breakpoint.width" max-height="20rem"></v-img>
+    <chimex-footer></chimex-footer>
 
     </v-container>    
 </template>
@@ -164,9 +160,8 @@ import ChimexFooter from '../components/ChimexFooter.vue'
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: .25rem solid white;
-    padding: 1rem;
-    border-radius: 1rem;
+    border: .2rem solid white;
+    padding: .25rem;    
 }
 
 .gr-container {

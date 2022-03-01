@@ -25,11 +25,11 @@
                     <v-col                 
                         align="center"                        
                     >
-                        <div class="display-1 font-weight-light secondary--text">
+                        <div v-bind:class="[!$vuetify.breakpoint.mobile ? 'display-1' : 'text-subtitle-1']" class=" font-weight-light secondary--text">
                             {{ review.comments }}
                         </div>
                         <br>
-                        <div class="font-weight-light display-2 primary--text">
+                        <div v-bind:class="[!$vuetify.breakpoint.mobile ? 'display-2' : 'text-h6']" class="font-weight-light primary--text">
                             {{ review.reviewer }}
                         </div>
                     </v-col>                      

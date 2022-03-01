@@ -50,7 +50,7 @@
           contain
           src="./assets/logo.png"
           transition="scale-transition"
-          width="150"
+          max-width="150"
         /></v-app-bar-title>
         
         <v-spacer></v-spacer>
@@ -89,10 +89,10 @@
       <v-main>       
          <v-sheet :max-height="$vuetify.breakpoint.height"
       id="scrolling-techniques-7"
-      class="overflow-y-auto overflow-x-hidden"      
+      class="pa-0 ma-0 overflow-y-auto overflow-x-hidden"      
     >                  
     <v-scroll-x-transition hide-on-leave>
-        <router-view></router-view>        
+        <router-view class="pa-0"></router-view>        
     </v-scroll-x-transition>
     </v-sheet>    
     </v-main>
