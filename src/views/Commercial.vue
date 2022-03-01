@@ -1,7 +1,7 @@
 <template>
     <v-container fluid>      
         <div class="img-container">
-            <v-img eager transition="fade-transition" max-height="35rem" class="darken" src="@/assets/commercial-1.jpeg">              
+            <v-img :eager="true" transition="fade-transition" max-height="35rem" class="darken" src="@/assets/commercial-1.jpeg">              
             </v-img>
             <div v-bind:class="[$vuetify.breakpoint.mobile ? 'text-h5 text-center' : 'text-h4']" class="centered white--text">Commercial Pest Control for South Carolina</div>        
         </div>  
@@ -22,7 +22,7 @@
             <v-container fluid>
                 <v-row class="ma-4" justify="center" align="center">
                     <v-col md="4">
-                        <v-img max-width="20rem" src="@/assets/flex-dollar.png"></v-img>                
+                        <v-img :eager="true" max-width="20rem" src="@/assets/flex-dollar.png"></v-img>                
                     </v-col>
 
                     <v-col md="4">
@@ -124,11 +124,11 @@
         <v-row justify="center" class="ma-4 text-h6 dark-gray text-center font-weight-light">Chimex Eco-Pest is committed to keeping the pests out and you satisfied. If you’re still seeing even the occasional pest after we treat your home, call us back for a free re-service. We guarantee our work and its results.</v-row>        
         
         <div class="gr-container mt-12">                
-            <v-img max-height="25rem" class="mt-4 fade" src="@/assets/commercial-2.jpeg"></v-img>
-            <v-img class="gr" src="@/assets/satisfaction-badge.png" :max-width="$vuetify.breakpoint.mobile ? $vuetify.breakpoint.width - 100: '40rem'"></v-img>
+            <v-img :eager="true" max-height="25rem" class="mt-4 fade" src="@/assets/commercial-2.jpeg"></v-img>
+            <v-img :eager="true" class="gr" src="@/assets/satisfaction-badge.png" :max-width="$vuetify.breakpoint.mobile ? $vuetify.breakpoint.width - 100: '40rem'"></v-img>
         </div>
 
-    <v-img src="@/assets/map.png" :max-width="$vuetify.breakpoint.width" max-height="20rem"></v-img>
+    <v-img :eager="true" src="@/assets/map.png" :max-width="$vuetify.breakpoint.width" max-height="20rem"></v-img>
     <chimex-footer></chimex-footer>
 
     </v-container>    

@@ -1,7 +1,7 @@
 <template>
     <v-container fluid>      
         
-        <v-img max-height="35rem" class="darken" src="@/assets/about-us-1.jpeg"></v-img>
+        <v-img :eager="true" max-height="35rem" class="darken" src="@/assets/about-us-1.jpeg"></v-img>
 
         <v-row 
         justify="center"

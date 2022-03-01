@@ -34,7 +34,7 @@
               <v-card-text class="dark-gray text-subtitle-1">Before beginning the pesticide application, a licensed Chimex technician takes the time to fully inspect the interior and exterior of your property. Identifying pest hotspots and entry points to provide the best treatment for your unique home and property. </v-card-text>
             </v-col>
             <v-col>
-              <v-img class="ma-4" eager transition="scale-transition" src="@/assets/inspect.png" max-width="10rem"></v-img>      
+              <v-img class="ma-4" :eager="true" transition="scale-transition" src="@/assets/inspect.png" max-width="10rem"></v-img>      
           </v-col>
           </v-row>
           </v-card>
@@ -103,11 +103,11 @@
   <v-row justify="center" class="ma-4 dark-gray text-h6 text-center font-weight-light">Chimex Eco-Pest is committed to keeping the pests out and you satisfied. If you’re still seeing even the occasional pest after we treat your home, call us back for a free re-service. We guarantee our work and its results.</v-row>        
     
     <div class="gr-container mt-12">                
-        <v-img max-height="25rem" class="mt-4 fade" src="@/assets/inspection-site.jpeg"></v-img>
-        <v-img class="gr" src="@/assets/satisfaction-badge.png" :max-width="$vuetify.breakpoint.mobile ? $vuetify.breakpoint.width - 100: '40rem'"></v-img>
+        <v-img :eager="true" max-height="25rem" class="mt-4 fade" src="@/assets/inspection-site.jpeg"></v-img>
+        <v-img :eager="true" class="gr" src="@/assets/satisfaction-badge.png" :max-width="$vuetify.breakpoint.mobile ? $vuetify.breakpoint.width - 100: '40rem'"></v-img>
     </div>    
   
-  <v-img src="@/assets/map.png" :max-width="$vuetify.breakpoint.width" max-height="20rem"></v-img>
+  <v-img :eager="true" src="@/assets/map.png" :max-width="$vuetify.breakpoint.width" max-height="20rem"></v-img>
   <chimex-footer></chimex-footer>
 
 </v-container>

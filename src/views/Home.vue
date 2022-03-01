@@ -200,7 +200,7 @@
         min-height="25rem"
         >            
        <v-row justify="center">         
-         <v-img class="mt-n16" max-width="15rem" src="@/assets/book-step.png"></v-img>
+         <v-img class="mt-n16" :eager="true" max-width="15rem" src="@/assets/book-step.png"></v-img>
          </v-row>
         <v-row justify="center"><v-card-title class="pa-0 text-h5 primary--text">Booking</v-card-title></v-row>
         
@@ -217,7 +217,7 @@
         min-height="25rem"
         >            
        <v-row justify="center">         
-         <v-img class="mt-n16" max-width="15rem" src="@/assets/clean-step.png"></v-img>
+         <v-img class="mt-n16" :eager="true" max-width="15rem" src="@/assets/clean-step.png"></v-img>
          </v-row>
         <v-row justify="center"><v-card-title class="pa-0 text-h5 primary--text">Removal</v-card-title></v-row>
         
@@ -234,7 +234,7 @@
         min-height="25rem"
         >            
        <v-row justify="center">         
-         <v-img class="mt-n16" max-width="15rem" src="@/assets/home-step.png"></v-img>
+         <v-img class="mt-n16" :eager="true" max-width="15rem" src="@/assets/home-step.png"></v-img>
          </v-row>
         <v-row justify="center"><v-card-title class="pa-0 text-h5 primary--text">Relax</v-card-title></v-row>
         
@@ -661,7 +661,7 @@
     </v-row>
 
     <review-carousel></review-carousel>  
-    <v-img src="@/assets/map.png" :max-width="$vuetify.breakpoint.width" max-height="20rem"></v-img>
+    <v-img :eager="true" src="@/assets/map.png" :max-width="$vuetify.breakpoint.width" max-height="20rem"></v-img>
     <chimex-footer></chimex-footer>
 
   </v-container>        
