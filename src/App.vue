@@ -50,7 +50,7 @@
           contain
           src="./assets/logo.png"
           transition="scale-transition"
-          max-width="150"
+          :max-width="$vuetify.breakpoint.mobile ? '100': '150'"
         /></v-app-bar-title>
         
         <v-spacer></v-spacer>
