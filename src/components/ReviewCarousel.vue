@@ -48,17 +48,13 @@
         model: 0,
         reviews: [
             {
-            reviewer: 'James Bond',
-            comments: 'What a great company',
+            reviewer: 'Rosa Simmons',
+            comments: 'I was so impressed with our technician Ben. He arrived on time and was super thorough!',
             },
             {
-            reviewer: 'Peter Parker',
-            comments: 'They got rid of all my spiders',
-            },
-            {
-            reviewer: 'Carole Basken',
-            comments: 'All my tigers are super clean and no bugs found!',
-            },
+            reviewer: 'Gary Campbell',
+            comments: 'Great same day service! I booked an appointment with Hunter in the morning and the service guy was at my door before noon.',
+            }
         ]
     }),
   }

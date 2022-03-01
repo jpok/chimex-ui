@@ -235,8 +235,9 @@
     </v-row>
      <v-container fluid v-bind:class="[!$vuetify.breakpoint.mobile ? 'grey lighten-5 elevation-n1' : '']">
         
-      <v-row justify="center">   
+      <v-row align="center">   
           
+          <v-spacer></v-spacer>
         <v-col md="5">
           <v-card
             class="pa-2"     

@@ -14,7 +14,8 @@
         class="ma-4"        
         @click="close"               
       >
-      mdi-close
+        <v-icon>mdi-close</v-icon>
+      
       </v-btn>
       </v-row>
   <form @submit.prevent="sendEmail" class="pa-12">              
