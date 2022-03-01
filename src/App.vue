@@ -64,6 +64,7 @@
       
     <v-dialog
       v-model="dialog"  
+      :hide-overlay="$vuetify.breakpoint.mobile"
       :fullscreen="$vuetify.breakpoint.mobile"      
       transition="dialog-top-transition"
       max-width="600px"                  
