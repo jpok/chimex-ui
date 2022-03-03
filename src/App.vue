@@ -89,9 +89,8 @@
    
           
       <v-main>       
-         <v-sheet 
-          :max-height="$vuetify.breakpoint.height" 
-          :max-width="$vuetify.breakpoint.width"
+         <v-sheet           
+          :max-height="$vuetify.breakpoint.height"
           id="scrolling-techniques-7"
           class="pa-0 ma-0 overflow-y-auto overflow-x-hidden"      
     >                  
