@@ -126,9 +126,7 @@
         <div class="gr-container mt-12">                
             <v-img :eager="true" max-height="25rem" class="mt-4 fade" src="@/assets/commercial-2.jpeg"></v-img>
             <v-img :eager="true" class="gr" src="@/assets/satisfaction-badge.png" :max-width="$vuetify.breakpoint.mobile ? $vuetify.breakpoint.width - 100: '40rem'"></v-img>
-        </div>
-
-    <v-img :eager="true" src="@/assets/map.png" :max-width="$vuetify.breakpoint.width" max-height="20rem"></v-img>
+        </div>    
 
     </v-container>    
 </template>

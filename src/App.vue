@@ -102,26 +102,12 @@
     </v-sheet>    
     </v-main>
 
+    <v-img class="ma-0" :eager="true" src="@/assets/map.png" :max-width="'100%'" max-height="10rem"></v-img>    
     <v-footer absolute height="50" padless color="primary">        
-        <v-row justify="center"> 
-                <p class="ma-2 white--text">+61 3 8376 6284</p>
-                <p class="ma-2 white--text">info@chimex.com</p>
-            <!-- <div class="white--text mr-4">
-                
-            </div> -->
-            
-        </v-row>
-                      
-        <!-- <v-img class="ftr-img" src="@/assets/footer-slope.png">              -->
-            <v-img
-            alt="Chimex Logo"          
-            contain
-            src="@/assets/logo.png"
-            transition="scale-transition"
-            width="50"
-            class="ftr-logo"
-            />
-        <!-- </v-img>   -->
+        <v-row justify="space-around" align="center">           
+                <div class="pl-4 white--text">803-543-4420</div>
+                <div class="pr-4 white--text">customercare@chimexeco-pest.com</div>                        
+        </v-row>                              
 
     </v-footer>  
 
@@ -193,8 +179,5 @@ import QuoteForm from '@/components/QuoteForm.vue'
 .v-dialog {
   pointer-events: none !important;
 }
-
-.ftr-img{   position: absolute;   bottom: 0 }
-.ftr-logo{   position: absolute;   bottom: 1rem }
 
 </style>

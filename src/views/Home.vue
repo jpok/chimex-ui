@@ -625,8 +625,7 @@
             <div v-bind:class="[!$vuetify.breakpoint.mobile ? 'display-1' : 'text-subtitle-1']" class="primary--text text-center">What our happy customers say about Chimex</div>   
     </v-row>
 
-    <review-carousel></review-carousel>  
-    <v-img :eager="true" src="@/assets/map.png" :max-width="$vuetify.breakpoint.width" max-height="20rem"></v-img>    
+    <review-carousel></review-carousel>     
 
   </v-container>        
 </template>
