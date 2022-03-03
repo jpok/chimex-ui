@@ -1,6 +1,6 @@
 
 <template>
-  <v-app id="inspire">
+  <v-app id="inspire" class="o-x-h">
     <v-navigation-drawer 
       v-model="drawer"
       v-if="$vuetify.breakpoint.mobile"         
@@ -62,9 +62,9 @@
         </nav>
         <v-spacer></v-spacer>
       
-    <v-dialog
-      class="overflow-x-hidden"
+    <v-dialog      
       v-model="dialog"  
+      v-bind:class="[$vuetify.breakpoint.mobile ? 'abs-dialog' : '']"
       :hide-overlay="$vuetify.breakpoint.mobile"
       :fullscreen="$vuetify.breakpoint.mobile"      
       transition="dialog-top-transition"
@@ -88,18 +88,43 @@
     </v-app-bar>
    
           
-      <v-main>       
+      <v-main style="overflow-x-hidden">       
          <v-sheet           
           :max-height="$vuetify.breakpoint.height"
           id="scrolling-techniques-7"
-          class="pa-0 ma-0 overflow-y-auto overflow-x-hidden"      
+          class="pa-0 ma-0 overflow-y-auto"      
     >                  
-    <v-scroll-x-transition hide-on-leave>
-        <router-view class=""></router-view>        
-    </v-scroll-x-transition>
+      <v-container fluid class="overflow-x-hidden overflow-x-hidden">
+      <v-scroll-x-transition hide-on-leave>
+          <router-view class=""></router-view>        
+      </v-scroll-x-transition>
+      </v-container>
     </v-sheet>    
     </v-main>
-    
+
+    <v-footer absolute height="50" padless color="primary">        
+        <v-row justify="center"> 
+                <p class="ma-2 white--text">+61 3 8376 6284</p>
+                <p class="ma-2 white--text">info@chimex.com</p>
+            <!-- <div class="white--text mr-4">
+                
+            </div> -->
+            
+        </v-row>
+                      
+        <!-- <v-img class="ftr-img" src="@/assets/footer-slope.png">              -->
+            <v-img
+            alt="Chimex Logo"          
+            contain
+            src="@/assets/logo.png"
+            transition="scale-transition"
+            width="50"
+            class="ftr-logo"
+            />
+        <!-- </v-img>   -->
+
+    </v-footer>  
+
   </v-app>
 </template>
 
@@ -156,8 +181,20 @@ import QuoteForm from '@/components/QuoteForm.vue'
     inset 0 1px 3px 0 rgba(0, 0, 0, 0.12) !important;
 }
 
-.v-slide-group__prev {
-display: none !important;
+.o-x-h {
+  overflow-x: hidden !important;
 }
+
+.v-slide-group__prev {
+  display: none !important;
+}
+
+
+.v-dialog {
+  pointer-events: none !important;
+}
+
+.ftr-img{   position: absolute;   bottom: 0 }
+.ftr-logo{   position: absolute;   bottom: 1rem }
 
 </style>

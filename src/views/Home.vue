@@ -626,8 +626,7 @@
     </v-row>
 
     <review-carousel></review-carousel>  
-    <v-img :eager="true" src="@/assets/map.png" :max-width="$vuetify.breakpoint.width" max-height="20rem"></v-img>
-    <chimex-footer></chimex-footer>
+    <v-img :eager="true" src="@/assets/map.png" :max-width="$vuetify.breakpoint.width" max-height="20rem"></v-img>    
 
   </v-container>        
 </template>
