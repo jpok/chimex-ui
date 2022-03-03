@@ -28,10 +28,10 @@
                     <v-col md="4">
                         <v-card class="pa-4">
                             <v-row>
-                            <v-card-title class="text-center secondary--text font-weight-regular">
+                            <v-card-title class="text-center text-subtitle-1 secondary--text font-weight-regular">
                                 Flexible Terms with Flexible Pricing
                             </v-card-title>
-                            <v-card-text class="text-subtitle-1 font-weight-light">
+                            <v-card-text class="text-subtitle-2 dark-gray font-weight-light">
                                 Chimex Eco-Pest understands that running a business means being flexible. That’s why our agreements and pricing are designed specifically to fit your business’s needs. Whether you need year round protection or a short term plan, Chimex has you covered. 
                                 <br>    
                                 <br>

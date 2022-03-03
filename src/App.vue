@@ -63,11 +63,12 @@
         <v-spacer></v-spacer>
       
     <v-dialog
+      class="overflow-x-hidden"
       v-model="dialog"  
       :hide-overlay="$vuetify.breakpoint.mobile"
       :fullscreen="$vuetify.breakpoint.mobile"      
       transition="dialog-top-transition"
-      max-width="600px"                  
+      :max-width="$vuetify.breakpoint.mobile ? $vuetify.breakpoint.mobile.width: '600px'"
       >
     
       <template v-slot:activator="{attrs }">
@@ -88,12 +89,14 @@
    
           
       <v-main>       
-         <v-sheet :max-height="$vuetify.breakpoint.height"
-      id="scrolling-techniques-7"
-      class="pa-0 ma-0 overflow-y-auto overflow-x-hidden"      
+         <v-sheet 
+          :max-height="$vuetify.breakpoint.height" 
+          :max-width="$vuetify.breakpoint.width"
+          id="scrolling-techniques-7"
+          class="pa-0 ma-0 overflow-y-auto overflow-x-hidden"      
     >                  
     <v-scroll-x-transition hide-on-leave>
-        <router-view class="pa-0"></router-view>        
+        <router-view class=""></router-view>        
     </v-scroll-x-transition>
     </v-sheet>    
     </v-main>
@@ -128,6 +131,10 @@ import QuoteForm from '@/components/QuoteForm.vue'
 <style>  
   a { text-decoration: none; }
 
+  .justify-text {
+    text-align: justify !important;
+  }
+
   .dark-gray {
     color: rgb(100, 98, 98);
   }
@@ -150,8 +157,8 @@ import QuoteForm from '@/components/QuoteForm.vue'
     inset 0 1px 3px 0 rgba(0, 0, 0, 0.12) !important;
 }
 
-.app-bar { 
-  z-index: 10;
+.v-slide-group__prev {
+display: none !important;
 }
 
 </style>

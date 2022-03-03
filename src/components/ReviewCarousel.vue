@@ -16,7 +16,7 @@
             </v-icon>
         </v-row>
 
-            <v-carousel height="10rem" hide-delimiters v-model="model">
+            <v-carousel :height="$vuetify.breakpoint.xs ? '8rem' : '10rem'" hide-delimiters v-model="model">
                 <v-carousel-item
                     v-for="(review) in reviews"
                     :key="review.reviewer"

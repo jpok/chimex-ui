@@ -47,8 +47,6 @@ export default new Vuetify({
       mouseIcon: {
         component: mouseIcon
       }
-    },
-    breakpoint: {      
     }
   }
 });

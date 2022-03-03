@@ -6,44 +6,13 @@
     <div v-bind:class="[$vuetify.breakpoint.mobile ? 'display-1' : 'display-3']" class="font-italic">Pest Control For You</div>
   </v-sheet>  
 
-<!-- 
-  <v-row     
-    class="pl-4"> -->
-    <!-- <v-col md="6"> -->
-      <!-- <v-card
-        class="pa-4 main-card"            
-        :elevation="$vuetify.breakpoint.mobile ? 0 : 2" 
-        :min-width="$vuetify.breakpoint.mobile ? 300: '65vh'"        
-      >
-        <v-card-text>  
-          <div v-bind:class="[$vuetify.breakpoint.mobile ? 'text-section-1' : 'text-h6']" class="dark-gray font-weight-medium">                      
-            At Chimex Eco-Pest our mission is to provide high quality pest control services with a low environmental impact. We are committed to protecting our customer’s homes from pests without compromising our commitment to preserve the natural environment all living creatures share.
-            <br>
-            <br>
-            The Chimex team understands that a pest free household is crucial to a happy and healthy home environment. Chimex Eco-Pest uses only the most effective products and techniques so that the only time you’ll have to think about pests is when we’re servicing your home.         
-          </div>
-        </v-card-text>      
-      </v-card>     -->
-    <!-- <div class="text-h3 font-weight-light" style="line-height:6rem">At <span style="color:var(--v-primary-base)" class="">Chimex </span>Eco-Pest</div>
-    <div class="text-h6 ml-11" style="line-height:6rem"><span style="text-decoration: underline">Our mission</span> is to provide <span class="font-italic">high quality</span> pest control services with a low environmental impact </div>
-    <div class="text-h6 ml-11 font-weight-light"> We are committed to protecting our customer’s homes from pests without compromising our commitment to preserve the natural environment all living creatures share.<span class="font-italic"></span></div> -->
 
-
-    <!-- </v-col> -->
-    
-     <!-- <v-spacer></v-spacer> -->
-    
-    <!-- <v-col> -->
-      <!-- <v-img max-height="29rem" eager transition="fade-transition"  v-bind:class="[$vuetify.breakpoint.mobile ? '' : 'rounded-lg rounded-r-0 home-image']" src="../assets/home.jpeg"></v-img> -->
       <div class="image-container">
         <v-img max-height="40rem" min-height="15rem" eager transition="fade-transition" src="../assets/pest-sprayers.jpg">        
         </v-img>
-        <!-- <v-img class="grass-and-rocks" max-height="10rem" min-height="15rem" eager transition="fade-transition" src="../assets/grass-and-rocks.jpg">        
-        </v-img> -->
           
         <v-container v-if="!$vuetify.breakpoint.mobile">
           <div class="left-text-container primary--text">
-            <!-- <div class="font-weight-light text-h3 pb-8"><span style="text-decoration: underline">Our mission</span> is to provide </div> -->
             <div class="font-weight-light pl-6 pb-4 text-h5">high quality pest control services</div>
             <div class="font-italic  font-weight-light text-h6 pl-6">
               with a low environmental impact
@@ -77,10 +46,6 @@
             </v-col>
           </v-row>
       </v-container>      
-        <!-- <v-img max-height="10rem" v-if="!$vuetify.breakpoint.mobile" class="grass-dots" src="../assets/grass-dots.png"></v-img> -->
-        
-    <!-- </v-col> -->
-  <!-- </v-row> -->
 
 <!-- SERVICES SECTION -->
 
@@ -179,7 +144,7 @@
     <v-row 
       justify="center"
       class="ma-10">
-      <v-container class="center md-text-h5 dark-gray text-center font-weight-light">
+      <v-container class="justify-text center md-text-h5 dark-gray font-weight-light">
         At Chimex we understand you want to enjoy a pest free home without pesty sign up. Simply request a quote and a member of our team will reach out to take care of the rest. It’s as easy as booking and letting one of our certified technicians take care of the rest. 
       </v-container>
     </v-row>
@@ -190,8 +155,8 @@
     </v-row>
 
     <v-row 
-      :justify="'center'"
-      class="ma-10">      
+      justify="center"
+      >      
 
       <v-col>
         <v-card              
@@ -204,7 +169,7 @@
          </v-row>
         <v-row justify="center"><v-card-title class="pa-0 text-h5 primary--text">Booking</v-card-title></v-row>
         
-        <v-card-text class="text-subtitle-1 primary--text text-center">
+        <v-card-text class="text-subtitle-1 primary--text text-center font-weight-light">
           Request a quote and one of our team members will reach out the same day to schedule your appointment time. 
         </v-card-text>
       </v-card>  
@@ -221,7 +186,7 @@
          </v-row>
         <v-row justify="center"><v-card-title class="pa-0 text-h5 primary--text">Removal</v-card-title></v-row>
         
-        <v-card-text class="text-subtitle-1 primary--text text-center">
+        <v-card-text class="text-subtitle-1 primary--text text-center font-weight-light">
           One of our certified technicians will come to you and complete a full inspection before treating your entire property both inside and outside. 
         </v-card-text>
       </v-card>  
@@ -238,7 +203,7 @@
          </v-row>
         <v-row justify="center"><v-card-title class="pa-0 text-h5 primary--text">Relax</v-card-title></v-row>
         
-        <v-card-text class="text-subtitle-1 primary--text text-center">
+        <v-card-text class="text-subtitle-1 primary--text text-center font-weight-light">
           Enjoy your pest free property!
         </v-card-text>
       </v-card>  
@@ -276,7 +241,7 @@
                   text-md-flex-h3                                                          
                   font-italic 
                   font-weight-light">We got you covered</div>
-              <div class="text-subtitle-1 dark-gray mt-12 font-weight-light">From Palmetto Bugs to Paper Wasps Chimex Eco-Pest knows that there are a wide variety of pests that call South Carolina home year round. Take a look at our pest library to see what kinds of pests are trying to make your home theirs. If you recognize a bug at home that’s not in our library please reach out and one of our certified technicians will be able to identify it for you! 
+              <div class="text-subtitle-1 justify-text dark-gray mt-12 font-weight-light">From Palmetto Bugs to Paper Wasps Chimex Eco-Pest knows that there are a wide variety of pests that call South Carolina home year round. Take a look at our pest library to see what kinds of pests are trying to make your home theirs. If you recognize a bug at home that’s not in our library please reach out and one of our certified technicians will be able to identify it for you! 
               </div>            
           </v-card>                
         </v-col>
@@ -656,8 +621,8 @@
      <!-- Reviews -->
     <v-row 
       :justify="'center'"
-      class="ma-10">
-            <div v-bind:class="[!$vuetify.breakpoint.mobile ? 'display-1' : 'text-subtitle-1']" class="primary--text">What our happy customers say about Chimex</div>   
+      class="ma-2 ma-md-4">
+            <div v-bind:class="[!$vuetify.breakpoint.mobile ? 'display-1' : 'text-subtitle-1']" class="primary--text text-center">What our happy customers say about Chimex</div>   
     </v-row>
 
     <review-carousel></review-carousel>  
@@ -680,17 +645,6 @@ import ChimexFooter from '@/components/ChimexFooter.vue'
 </script>
 
 <style scoped>
-  .grass-dots {
-    margin-top: -22rem;
-    margin-left: -7rem;    
-    animation: float 6s ease-in-out infinite;
-  }
-
-  /* .green-border { 
-    outline: 10px solid var(--v-secondary-base) !important;
-    outline-offset: -30px;
-    box-sizing: border-box;
-  } */
 
   .image-container{    
     position: relative;    
@@ -711,29 +665,16 @@ import ChimexFooter from '@/components/ChimexFooter.vue'
   }
 
   .right-text-container {    
-    position: absolute;
-    margin-right: 2rem;
+    position: absolute;    
     top:3%;
-    left: 65%;
-    max-width: 35rem;
-    /* transform: translate(-50%, -50%);     */
+    right: 1%;
+    max-width: 30rem;
   }
 
   .main-card {
     z-index: 5;
   }
 
-  @keyframes float {
-	0% {		
-		transform: translatey(0px);
-	}
-	50% {		
-		transform: translatey(-8px);
-	}
-	100% {		
-		transform: translatey(0px);
-	}
-}
 
 </style>
 
