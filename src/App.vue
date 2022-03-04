@@ -89,21 +89,20 @@
    
           
       <v-main style="overflow-x-hidden">       
-         <v-sheet           
+         <v-sheet                     
           :max-height="$vuetify.breakpoint.height"
           id="scrolling-techniques-7"
           class="pa-0 ma-0 overflow-y-auto"      
     >                  
-      <v-container fluid class="overflow-x-hidden overflow-x-hidden">
+      <v-container fluid class="full-fluid overflow-x-hidden overflow-x-hidden">
       <v-scroll-x-transition hide-on-leave>
-          <router-view class=""></router-view>        
+          <router-view class="full-fluid"></router-view>        
       </v-scroll-x-transition>
       </v-container>
     </v-sheet>    
     </v-main>
-
-    <v-img class="ma-0" :eager="true" src="@/assets/map.png" :max-width="'100%'" max-height="10rem"></v-img>    
-    <v-footer absolute height="50" padless color="primary">        
+    
+    <v-footer app absolute height="50" class="front" padless color="primary">        
         <v-row justify="space-around" align="center">           
                 <div class="pl-4 white--text">803-543-4420</div>
                 <div class="pr-4 white--text">customercare@chimexeco-pest.com</div>                        
@@ -175,9 +174,69 @@ import QuoteForm from '@/components/QuoteForm.vue'
   display: none !important;
 }
 
-
 .v-dialog {
   pointer-events: none !important;
 }
+
+.full-fluid {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.front {
+  z-index: 10 !important;
+}
+
+@keyframes slideinleft {
+    from {
+      margin-left: -100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+  @keyframes slideinright {
+    from {
+      margin-right: -100%;
+      width: 300%;
+    }
+
+    to {
+      margin-right: 0%;
+      width: 100%;
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0%;
+    }
+
+    to {
+      opacity: 100%;
+    }
+    
+  }
+
+  .slide-in-left {
+    animation-duration: 3s;
+    animation-name: slideinleft;
+  }
+
+  .slide-in-right {
+    animation-duration: 2s;
+    animation-name: slideinright;
+  }
+  
+  
+  .fade-in {
+    animation-duration: 4s;
+    animation-name: fade-in;
+  }
 
 </style>

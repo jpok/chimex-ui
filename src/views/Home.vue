@@ -13,16 +13,16 @@
           
         <v-container v-if="!$vuetify.breakpoint.mobile">
           <div class="left-text-container primary--text">
-            <div class="font-weight-light pl-6 pb-4 text-h5">high quality pest control services</div>
-            <div class="font-italic  font-weight-light text-h6 pl-6">
+            <div class="font-weight-light slide-in-left pl-6 pb-4 text-h4">high quality pest control services</div>
+            <div class="font-italic fade-in font-weight-light text-h6 pl-6">
               with a low environmental impact
             </div>
           </div>
-          <div class="center-text-container text-center white--text">
-            <div class="text-subtitle-2 font-weight-light"> We are committed to protecting our customer’s homes from pests without compromising our commitment to preserve the natural environment all living creatures share</div> 
+          <div class="center-text-container fade-in text-center white--text">
+            <div class="text-subtitle-1 font-weight-normal"> We are committed to protecting our customer’s homes from pests without compromising our commitment to preserve the natural environment all living creatures share</div> 
           </div>
           
-          <div class="right-text-container">
+          <div class="right-text-container slide-in-right">
             <div class="font-weight-light text-subtitle-1 text-right primary--text">
               The Chimex team understands that a pest free household is crucial to a happy and healthy home for you and your family. Chimex Eco-Pest uses only the most effective products and techniques so that the only time you’ll have to think about pests is when we’re servicing your home.
             </div>
@@ -144,7 +144,7 @@
     <v-row 
       justify="center"
       class="ma-10">
-      <v-container class="justify-text center md-text-h5 dark-gray font-weight-light">
+      <v-container class="justify-text text-sm-center md-text-h5 dark-gray font-weight-light">
         At Chimex we understand you want to enjoy a pest free home without pesty sign up. Simply request a quote and a member of our team will reach out to take care of the rest. It’s as easy as booking and letting one of our certified technicians take care of the rest. 
       </v-container>
     </v-row>

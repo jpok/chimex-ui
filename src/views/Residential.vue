@@ -16,10 +16,13 @@
    </v-row>
 
 <v-sheet class="grey lighten-5" v-bind:class="[$vuetify.breakpoint.mobile ? '' : 'elevation-n1']">  
+  <v-container>
    <v-row    
-    align="center"    
+    align="center"        
+    justify="space-around"
+      
     >
-      <v-col cols="12" sm="6" md="6">
+      <v-col justify="center" cols="12" sm="6" md="5">
       <v-sheet class="ma-2" :elevation="!$vuetify.breakpoint.mobile ? 3 : 0">
       <v-tabs>
         <v-tab class="text-subtitle-2 text-md-subtitle-1">Inspection</v-tab>
@@ -92,20 +95,22 @@
       </v-sheet>
       </v-col>
       
-      <v-col sm="6">
+      <v-col sm="6" md="5">
         <v-img :max-width="$vuetify.breakpoint.mobile ? $vuetify.breakpoint.width - 50: '35rem'" class="ma-4" eager transition="scale-transition" src="@/assets/residential-1.png"></v-img>      
       </v-col>
    </v-row>
+   </v-container>
 </v-sheet>
    
   <v-row justify="center" v-bind:class="[$vuetify.breakpoint.mobile ? 'display-1' : 'display-3']" class="ma-12 primary--text font-weight-light">Our Promise</v-row>        
             
   <v-row justify="center" class="ma-4 dark-gray text-h6 text-center font-weight-light">Chimex Eco-Pest is committed to keeping the pests out and you satisfied. If you’re still seeing even the occasional pest after we treat your home, call us back for a free re-service. We guarantee our work and its results.</v-row>        
     
-    <div class="gr-container mt-12">                
-        <v-img :eager="true" max-height="25rem" class="mt-4 fade" src="@/assets/inspection-site.jpeg"></v-img>
-        <v-img :eager="true" class="gr" src="@/assets/satisfaction-badge.png" :max-width="$vuetify.breakpoint.mobile ? $vuetify.breakpoint.width - 100: '40rem'"></v-img>
-    </div>      
+    <div class="gr-container">                
+        <v-img :eager="true" max-height="25rem" class="mt-4 fade" src="@/assets/inspection-site.jpeg"></v-img>       
+        <v-img :eager="true" class="gr" src="@/assets/satisfaction-badge.png" :max-width="$vuetify.breakpoint.mobile ? '15rem' : '25rem'"></v-img>
+        <v-img class="ma-0" :eager="true" src="@/assets/map.png" :max-width="'100%'" max-height="10rem"></v-img>    
+    </div>           
 
 </v-container>
 
@@ -126,20 +131,16 @@ import ChimexFooter from '@/components/ChimexFooter.vue'
 
 .gr-container {
     position: relative;    
+    overflow-x: hidden;
 }
 
 .gr { 
     position: absolute;    
-    top: 80%;
+    top: 70%;
     left: 85%;
-    z-index: 10;
+    z-index: 5;
     transform: translate(-50%, -50%);
 }
-
-.fade { 
-    /* opacity: 80%; */
-}
-
 .slidein {
   max-width: 600px;
   padding: 2em 3em;

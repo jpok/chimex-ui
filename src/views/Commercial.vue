@@ -3,16 +3,16 @@
         <div class="img-container">
             <v-img :eager="true" transition="fade-transition" max-height="35rem" class="darken" src="@/assets/commercial-1.jpeg">              
             </v-img>
-            <div v-bind:class="[$vuetify.breakpoint.mobile ? 'text-h5 text-center' : 'text-h4']" class="centered white--text">Commercial Pest Control for South Carolina</div>        
+            <div v-bind:class="[$vuetify.breakpoint.xs ? 'text-h5 text-center' : 'text-h4']" class="centered white--text">Commercial Pest Control for South Carolina</div>        
         </div>  
         
-        <v-row justify="center" v-bind:class="[$vuetify.breakpoint.mobile ? 'display-1 text-center' : 'display-3']" class="ma-12 primary--text font-weight-light">Pest Control Customized for Your Business</v-row>
+        <v-row justify="center" v-bind:class="[$vuetify.breakpoint.mobile ? 'display-1 text-center' : 'display-3']" class="ma-4 primary--text font-weight-light">Pest Control Customized for Your Business</v-row>
 
             <v-row 
             justify="center"
-            class="ma-10">                
+            class="ma-2">                
             <v-col  md="8">
-            <div class="text-center dark-gray text-h6 font-weight-light">
+            <div v-bind:class="[$vuetify.breakpoint.xs ? 'justify-text' : 'text-center']" class=" dark-gray text-h6 font-weight-light">
                 Chimex Eco-Pest knows that having unwelcome pests in your place of business can not only make your customers feel uneasy, but can also hurt your bottom line. Because every commercial space and business owner’s needs are different, Chimex offers a customized approach to making and keeping your business property pest free. Contact us today and one of our certified technicians will work with you to create and implement a pest management solution. Don’t let pests get in the way of your profits. With Chimex’s commercial services you can go about your business confident that you won’t be interrupted by any unwanted visitors. 
             </div>
             </v-col>
@@ -123,10 +123,11 @@
                 
         <v-row justify="center" class="ma-4 text-h6 dark-gray text-center font-weight-light">Chimex Eco-Pest is committed to keeping the pests out and you satisfied. If you’re still seeing even the occasional pest after we treat your home, call us back for a free re-service. We guarantee our work and its results.</v-row>        
         
-        <div class="gr-container mt-12">                
-            <v-img :eager="true" max-height="25rem" class="mt-4 fade" src="@/assets/commercial-2.jpeg"></v-img>
-            <v-img :eager="true" class="gr" src="@/assets/satisfaction-badge.png" :max-width="$vuetify.breakpoint.mobile ? $vuetify.breakpoint.width - 100: '40rem'"></v-img>
-        </div>    
+        <div class="gr-container">                
+        <v-img :eager="true" max-height="25rem" class="mt-4 fade" src="@/assets/inspection-site.jpeg"></v-img>       
+        <v-img :eager="true" class="gr" src="@/assets/satisfaction-badge.png" :max-width="$vuetify.breakpoint.mobile ? $vuetify.breakpoint.width - 200: '20rem'"></v-img>
+        <v-img class="ma-0" :eager="true" src="@/assets/map.png" :max-width="'100%'" max-height="10rem"></v-img>    
+    </div>        
 
     </v-container>    
 </template>
@@ -143,6 +144,7 @@ import ChimexFooter from '../components/ChimexFooter.vue'
 </script>
 
 <style scoped>
+
 
 .darken {
  filter: brightness(50%);
@@ -163,18 +165,15 @@ import ChimexFooter from '../components/ChimexFooter.vue'
 
 .gr-container {
     position: relative;    
+    overflow-x: hidden;
 }
 
 .gr { 
     position: absolute;    
-    top: 80%;
+    top: 70%;
     left: 85%;
-    z-index: 10;
+    z-index: 5;
     transform: translate(-50%, -50%);
-}
-
-.fade { 
-    /* opacity: 80%; */
 }
 
 .title-height {    
