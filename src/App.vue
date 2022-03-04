@@ -94,10 +94,10 @@
           id="scrolling-techniques-7"
           class="pa-0 ma-0 overflow-y-auto"      
     >                  
-      <v-container fluid class="full-fluid overflow-x-hidden overflow-x-hidden">
-      <v-scroll-x-transition hide-on-leave>
-          <router-view class="full-fluid"></router-view>                  
-      </v-scroll-x-transition>
+      <v-container fluid class="full-fluid">
+      
+      <router-view class="full-fluid"></router-view>                  
+      
  
       </v-container>
     </v-sheet>    
@@ -105,7 +105,7 @@
     </v-main>
     <v-container>
     <v-row>
-      <v-footer absolute padless height="50" class="front" color="primary">        
+      <v-footer absolute padless height="50" color="primary">        
       
       <v-row justify="center">
             <div class="ma-2 white--text">803-543-4420</div>

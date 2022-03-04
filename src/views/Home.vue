@@ -85,7 +85,7 @@
         class="rounded-xl pa-8 mx-auto rounded-tl-0 rounded-br-0"                                  
       >                                            
         <v-img  max-width="120px" src="@/assets/icons/infestation-icon.svg"></v-img>
-        <div class="primary--text pa-2 text-h6 font-weight-light">Preventative</div>
+        <div class="primary--text pa-2 text-h6 font-weight-light">Infestation</div>
 
         <div class="justify-center text-subtitle-2 dark-gray font-weight-light">
           No matter how bad it’s got, Chimex has you covered. Our certified service technicians will not only get rid of your household pests, but keep them from coming back
@@ -119,7 +119,7 @@
         class="rounded-xl pa-8 mx-auto rounded-tl-0 rounded-br-0"                                  
         >                                            
         <v-img  max-width="120px" src="@/assets/icons/ant-icon.svg"></v-img>
-        <div class="primary--text pa-2 text-h6 font-weight-light">Mosquitoes</div>
+        <div class="primary--text pa-2 text-h6 font-weight-light">Pest</div>
 
         <div class="justify-center text-subtitle-2 dark-gray font-weight-light">
            Keeping pests at bay is what we do. Whether it’s just a few ants or a full on cockroach invasion, Chimex Eco-Pest will make and keep your home pest free 
