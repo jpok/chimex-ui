@@ -97,13 +97,13 @@
       <v-container fluid class="full-fluid">
       
       <router-view class="full-fluid"></router-view>                  
-      <v-footer absolute height="50" class="primary">        
+      <!-- <v-footer fixed absolute class="primary">        
       
         <v-row justify="center">
             <div class="ma-2 white--text">803-543-4420</div>
             <div class="ma-2 white--text">customercare@chimexeco-pest.com</div>  
         </v-row>
-    </v-footer>  
+    </v-footer>   -->
 
       </v-container>
       
