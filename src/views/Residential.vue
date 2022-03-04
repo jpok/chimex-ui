@@ -29,7 +29,7 @@
           <v-tab-item>
             <v-card
             flat            
-            min-height="20rem"                        
+            min-height="22rem"                        
             >
           <v-row align="center">
             <v-col cols="8">
@@ -46,7 +46,7 @@
         <v-tab-item>
             <v-card                        
             flat
-            min-height="20rem"   
+            min-height="22rem"   
             >
               <v-row align="center">
             <v-col cols="8">
@@ -62,7 +62,7 @@
         <v-tab-item>
             <v-card                        
             flat
-            min-height="20rem"   
+            min-height="22rem"   
             >
             <v-row align="center">
             <v-col cols="8">
@@ -79,7 +79,7 @@
         <v-tab-item>
             <v-card                        
             flat
-            min-height="20rem"   
+            min-height="22rem"   
             >
           <v-row align="center">
             <v-col cols="8">
@@ -106,12 +106,13 @@
             
   <v-row justify="center" class="ma-4 dark-gray text-h6 text-center font-weight-light">Chimex Eco-Pest is committed to keeping the pests out and you satisfied. If you’re still seeing even the occasional pest after we treat your home, call us back for a free re-service. We guarantee our work and its results.</v-row>        
     
+        
     <div class="gr-container">                
-        <v-img :eager="true" max-height="25rem" class="mt-4 fade" src="@/assets/inspection-site.jpeg"></v-img>       
-        <v-img :eager="true" class="gr" src="@/assets/satisfaction-badge.png" :max-width="$vuetify.breakpoint.mobile ? '15rem' : '25rem'"></v-img>
-        <v-img class="ma-0" :eager="true" src="@/assets/map.png" :max-width="'100%'" max-height="10rem"></v-img>    
-    </div>           
-
+    <v-img :eager="true" max-height="25rem" class="mt-4 fade" src="@/assets/inspection-site.jpeg"></v-img>       
+    <v-img :eager="true" class="gr" src="@/assets/satisfaction-badge.png" :max-width="$vuetify.breakpoint.xs ? '10rem' : '20rem'"></v-img>
+    <v-img class="ma-0" :eager="true" src="@/assets/map.png" :max-width="'100%'" max-height="10rem"></v-img>    
+    </div>  
+    
 </v-container>
 
 </template>

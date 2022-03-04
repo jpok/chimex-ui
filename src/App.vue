@@ -96,19 +96,25 @@
     >                  
       <v-container fluid class="full-fluid overflow-x-hidden overflow-x-hidden">
       <v-scroll-x-transition hide-on-leave>
-          <router-view class="full-fluid"></router-view>        
+          <router-view class="full-fluid"></router-view>                  
       </v-scroll-x-transition>
+ 
       </v-container>
     </v-sheet>    
+ 
     </v-main>
-    
-    <v-footer app absolute height="50" class="front" padless color="primary">        
-        <v-row justify="space-around" align="center">           
-                <div class="pl-4 white--text">803-543-4420</div>
-                <div class="pr-4 white--text">customercare@chimexeco-pest.com</div>                        
-        </v-row>                              
-
+    <v-container>
+    <v-row>
+      <v-footer absolute padless height="50" class="front" color="primary">        
+      
+      <v-row justify="center">
+            <div class="ma-2 white--text">803-543-4420</div>
+            <div class="ma-2 white--text">customercare@chimexeco-pest.com</div>  
+            </v-row>
     </v-footer>  
+
+    </v-row>
+    </v-container>
 
   </v-app>
 </template>
@@ -181,6 +187,7 @@ import QuoteForm from '@/components/QuoteForm.vue'
 .full-fluid {
   padding: 0 !important;
   margin: 0 !important;
+  overflow: hidden !important;
 }
 
 .front {
@@ -214,7 +221,7 @@ import QuoteForm from '@/components/QuoteForm.vue'
 
   @keyframes fade-in {
     from {
-      opacity: 0%;
+      opacity: 1%;
     }
 
     to {

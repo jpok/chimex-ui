@@ -125,9 +125,9 @@
         
         <div class="gr-container">                
         <v-img :eager="true" max-height="25rem" class="mt-4 fade" src="@/assets/inspection-site.jpeg"></v-img>       
-        <v-img :eager="true" class="gr" src="@/assets/satisfaction-badge.png" :max-width="$vuetify.breakpoint.mobile ? $vuetify.breakpoint.width - 200: '20rem'"></v-img>
+        <v-img :eager="true" class="gr" src="@/assets/satisfaction-badge.png" :max-width="$vuetify.breakpoint.xs ? '10rem' : '20rem'"></v-img>
         <v-img class="ma-0" :eager="true" src="@/assets/map.png" :max-width="'100%'" max-height="10rem"></v-img>    
-    </div>        
+        </div>        
 
     </v-container>    
 </template>
@@ -171,7 +171,7 @@ import ChimexFooter from '../components/ChimexFooter.vue'
 .gr { 
     position: absolute;    
     top: 70%;
-    left: 85%;
+    left: 90%;
     z-index: 5;
     transform: translate(-50%, -50%);
 }
