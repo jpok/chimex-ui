@@ -158,7 +158,7 @@ import ChimexFooter from '@/components/ChimexFooter.vue'
 }
 
 .v-dialog {
-  pointer-events: none !important;
+    overflow-x: hidden;  
 }
 
 .v-application {

@@ -3,8 +3,8 @@
         <v-row justify="center"  class="offset-md-5"> 
 
             <div class="white--text">
-                <p>+61 3 8376 6284</p>
-                <p>info@chimex.com</p>
+                <p>(803) 543-4420</p>
+                <p>customercare@chimexeco-pest.com</p>
             </div>
             
         </v-row>
