@@ -1,6 +1,6 @@
 
 <template>
-  <v-app id="inspire">
+  <v-app id="inspire" class="overflow-x-hidden">
     <v-navigation-drawer 
       v-model="drawer"
       v-if="$vuetify.breakpoint.mobile"         
@@ -34,7 +34,7 @@
       app
       elevation="4"
       color="white"
-      class="app-bar"            
+      class="app-bar"                  
     >
 
       <v-app-bar-nav-icon 
@@ -161,6 +161,9 @@ import ChimexFooter from '@/components/ChimexFooter.vue'
   pointer-events: none !important;
 }
 
+.v-application {
+  overflow-x: hidden;
+}
 
 .front {
   z-index: 10 !important;

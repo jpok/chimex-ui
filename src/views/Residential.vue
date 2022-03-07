@@ -22,9 +22,14 @@
     justify="space-around"
       
     >
-      <v-col justify="center" cols="12" sm="6" md="5">
+      <v-col justify="center" cols="12" sm="6" md="7">
       <v-sheet class="ma-2" :elevation="!$vuetify.breakpoint.mobile ? 3 : 0">
-      <v-tabs>
+      <v-tabs   
+        fixed-tabs
+        next-icon="mdi-arrow-right-bold-box-outline"
+        prev-icon="mdi-arrow-left-bold-box-outline"
+        show-arrows>
+         <v-tabs-slider color="secondary"></v-tabs-slider>
         <v-tab class="text-subtitle-2 text-md-subtitle-1">Inspection</v-tab>
           <v-tab-item>
             <v-card
