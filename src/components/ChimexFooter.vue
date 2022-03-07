@@ -2,7 +2,7 @@
     <v-footer height="170" padless color="primary">        
         <v-row justify="center"  class="offset-md-5"> 
 
-            <div class="white--text">
+            <div class="white--text pb-4 text-sm-h6 text-md-h5">
                 <p>(803) 543-4420</p>
                 <p>customercare@chimexeco-pest.com</p>
             </div>

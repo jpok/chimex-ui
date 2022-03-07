@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid class="pa-0">      
+    <v-container fluid class="pa-0 mb-12">      
         
         <v-img :eager="true" max-height="35rem" class="darken" src="@/assets/about-us-1.jpeg"></v-img>
 
