@@ -16,27 +16,29 @@ const routes = [
   {
     path: '/residential',
     name: 'Residential',    
-    component: Residential
-    // component: () => import('../views/Residential.vue')
+    component: Residential    
   },
   {
     path: '/commercial',
     name: 'Commercial',   
     component: Commercial 
-    // component: () => import('../views/Commercial.vue')
+    
   },
   {
     path: '/us-and-our-products',
     name: 'Us & Our Products',    
-    component: UsAndOurProducts
-    // component: () => import('../views/UsAndOurProducts.vue')
+    component: UsAndOurProducts    
   }
 ]
 
 const router = new VueRouter({
   routes,
   linkActiveClass: "active",
-  linkExactActiveClass: "exact-active"  
+  linkExactActiveClass: "exact-active",
+  scrollBehavior(to, from, savedPosition) {
+    // always scroll to top
+    window.scrollTo(0, 0);
+  },
 })
 
 export default router
