@@ -24,7 +24,7 @@
           
           <div class="right-text-container slide-in-right">
             <div class="font-weight-light text-subtitle-1 text-right primary--text">
-              The Chimex team understands that a pest free household is crucial to a happy and healthy home for you and your family. Chimex Eco-Pest uses only the most effective products and techniques so that the only time you’ll have to think about pests is when we’re servicing your home.
+              The Chimex team understands that a pest free environment is crucial to a happy and healthy home. To ensure a pest free household Chimex Eco-Pest uses only the most effective products and techniques, so that the only time you’ll think about pests is when we’re servicing your home.
             </div>
           </div>
         </v-container>
@@ -88,7 +88,7 @@
         <div class="primary--text pa-2 text-h6 font-weight-light">Infestation</div>
 
         <div class="justify-center text-subtitle-2 dark-gray font-weight-light">
-          No matter how bad it’s got, Chimex has you covered. Our certified service technicians will not only get rid of your household pests, but keep them from coming back
+          No matter how bad the infestation, Chimex has you covered. Our certified service technicians will not only get rid of your household pests, but keep them from coming back
         </div>                              
       
       </v-card>  
@@ -311,10 +311,10 @@
             >
             <div class="green-border">
             <v-row class="pa-2" justify="center">              
-              <img height="90" class="pb-0 pt-2" src="@/assets/icons/fish-bug-icon.svg">
+              <img height="90" class="pb-0 pt-2" src="@/assets/icons/rolly-polly-icon.svg">
 
               <v-card-text class=" dark-gray text-center">                        
-              Silverfish
+              Sow Bug
               <br>
               <br>
             </v-card-text>      
@@ -585,10 +585,9 @@
             <v-row class="pa-2" justify="center">              
               <img height="90" class="pb-0 pt-2" src="@/assets/icons/tick-icon.svg">
 
-              <v-card-text class="pa-0 dark-gray text-center">                        
-              Tick
-              <br>
-              <br>
+              <v-card-text class="dark-gray text-center">                                                      
+              Tick            
+              <br>              
             </v-card-text>      
             </v-row>       
             </div>                 
@@ -601,10 +600,10 @@
             >
             <div class="green-border">
             <v-row class="pa-2" justify="center">              
-              <img height="90" class="pb-0 pt-2" src="@/assets/icons/weevile-icon.svg">
+              <img height="90" class="pb-0 pt-2" src="@/assets/icons/stink-bug-icon.svg">
 
               <v-card-text class=" dark-gray text-center">                        
-              Weevile
+              Stink Bug
               <br>
               <br>
             </v-card-text>      
