@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid>      
+    <v-container fluid class="pa-0">      
         <div class="img-container">
             <v-img :eager="true" transition="fade-transition" max-height="35rem" class="darken" src="@/assets/commercial-1.jpeg">              
             </v-img>

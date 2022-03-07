@@ -1,5 +1,5 @@
 <template>
-<v-container fluid>
+<v-container fluid class="pa-0">
   <v-sheet class="primary white--text pa-2" elevation="5">
     <div v-bind:class="[$vuetify.breakpoint.mobile ? 'display-1' : 'display-3']" class="font-italic">Pest Control For a Better Home</div>
   </v-sheet>  

@@ -1,6 +1,6 @@
 
 <template>
-  <v-app id="inspire" class="o-x-h">
+  <v-app id="inspire">
     <v-navigation-drawer 
       v-model="drawer"
       v-if="$vuetify.breakpoint.mobile"         
@@ -32,11 +32,9 @@
      
     <v-app-bar         
       app
-      absolute
+      elevation="4"
       color="white"
-      class="app-bar"
-      elevate-on-scroll
-      scroll-target="#scrolling-techniques-7"
+      class="app-bar"            
     >
 
       <v-app-bar-nav-icon 
@@ -88,37 +86,22 @@
     </v-app-bar>
    
           
-      <v-main style="overflow-x-hidden">       
-         <v-sheet                     
-          :max-height="$vuetify.breakpoint.height"
-          id="scrolling-techniques-7"
-          class="pa-0 ma-0 overflow-y-auto"      
-    >                  
-      <v-container fluid class="full-fluid">
+      <v-main>       
       
-      <router-view class="full-fluid"></router-view>                  
-      <!-- <v-footer fixed absolute class="primary">        
+      <router-view></router-view>                      
       
-        <v-row justify="center">
-            <div class="ma-2 white--text">803-543-4420</div>
-            <div class="ma-2 white--text">customercare@chimexeco-pest.com</div>  
-        </v-row>
-    </v-footer>   -->
-
-      </v-container>
-      
-    </v-sheet>          
     </v-main>    
-
+    <chimex-footer app></chimex-footer>  
   </v-app>
 </template>
 
 <script>
 
 import QuoteForm from '@/components/QuoteForm.vue'
+import ChimexFooter from '@/components/ChimexFooter.vue'
 
   export default {  
-    components: { QuoteForm},
+    components: { QuoteForm, ChimexFooter},
     methods: {
         closeDialog() {            
             this.dialog = false;
@@ -178,11 +161,6 @@ import QuoteForm from '@/components/QuoteForm.vue'
   pointer-events: none !important;
 }
 
-.full-fluid {
-  padding: 0 !important;
-  margin: 0 !important;
-  overflow: hidden !important;
-}
 
 .front {
   z-index: 10 !important;
