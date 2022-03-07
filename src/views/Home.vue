@@ -13,9 +13,9 @@
           
         <v-container v-if="!$vuetify.breakpoint.mobile">
           <div class="left-text-container primary--text">
-            <div class="font-weight-light slide-in-left pl-6 pb-4 text-h4">high quality pest control services</div>
+            <div class="font-weight-light slide-in-left pl-6 pb-4 text-h4">High quality pest control services</div>
             <div class="font-italic fade-in font-weight-light text-h6 pl-6">
-              with a low environmental impact
+              With a low environmental impact
             </div>
           </div>
           <div class="center-text-container fade-in text-center white--text">
@@ -33,9 +33,9 @@
       <v-container v-if="$vuetify.breakpoint.mobile">
           <v-row>
             <v-col>
-            <div class="primary--text font-weight-light ma-3 text-h5 text-center">high quality pest control services</div>
+            <div class="primary--text font-weight-light ma-3 text-h5 text-center">High quality pest control services</div>
             <div class="font-weight-light font-italic secondary--text text-h6 text-center">
-              with a low <span>environmental impact</span>
+              With a low <span>environmental impact</span>
             </div>
             <div class="font-weight-light text-subtitle-1 dark-gray ma-3"> We are committed to protecting our customer’s homes from pests without compromising our commitment to preserve the natural environment all living creatures share.<span class="font-italic"></span></div> 
             
