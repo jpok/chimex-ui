@@ -38,7 +38,7 @@
             >
           <v-row align="center">
             <v-col cols="8">
-              <v-card-text class="dark-gray justify-text text-subtitle-1">Before beginning the pesticide application, a licensed Chimex technician takes the time to fully inspect the interior and exterior of your property. Identifying pest hotspots and entry points to provide the best treatment for your unique home and property. </v-card-text>
+              <v-card-text class="dark-gray text-subtitle-1">Before beginning the pesticide application, a licensed Chimex technician takes the time to fully inspect the interior and exterior of your property. Identifying pest hotspots and entry points to provide the best treatment for your unique home and property. </v-card-text>
             </v-col>
             <v-col  cols="4">
               <v-img class="ma-4" :eager="true" transition="scale-transition" src="@/assets/inspect.png" :max-width="$vuetify.breakpoint.xs ? '5rem' : '8rem'"></v-img>      
@@ -55,7 +55,7 @@
             >
               <v-row align="center">
             <v-col cols="8">
-          <v-card-text class="text-subtitle-1 justify-text dark-gray">At Chimex we believe that you know your home best. That's why we work with you to locate the areas inside your home where pests invade. We treat those areas directly, providing effective and long lasting protection that's pet and kid friendly.</v-card-text>
+          <v-card-text class="text-subtitle-1 dark-gray">At Chimex we believe that you know your home best. That's why we work with you to locate the areas inside your home where pests invade. We treat those areas directly, providing effective and long lasting protection that's pet and kid friendly.</v-card-text>
                 </v-col>
             <v-col cols="4">
               <v-img class="ma-4" eager transition="scale-transition" src="@/assets/living-room.png" :max-width="$vuetify.breakpoint.xs ? '5rem' : '8rem'"></v-img>      
@@ -71,7 +71,7 @@
             >
             <v-row align="center">
             <v-col cols="8">
-          <v-card-text class="text-subtitle-1 justify-text dark-gray">Chimex Eco-Pest believes that a good defense is the best offense. By giving your home’s foundation a full barrier treatment we keep the pests out of your home and off your mind.
+          <v-card-text class="text-subtitle-1 dark-gray">Chimex Eco-Pest believes that a good defense is the best offense. By giving your home’s foundation a full barrier treatment we keep the pests out of your home and off your mind.
           </v-card-text>
                </v-col>
             <v-col cols="4">
@@ -88,7 +88,7 @@
             >
           <v-row align="center">
             <v-col cols="8">
-          <v-card-text class="text-subtitle-1 justify-text dark-gray">Chimex Eco-Pest knows that outdoor living spaces are an important part of your home. That's why we do a full yard treatment that keeps the stingers, clingers and biters from ruining all the fun the outdoors has to offer. </v-card-text>
+          <v-card-text class="text-subtitle-1 dark-gray">Chimex Eco-Pest knows that outdoor living spaces are an important part of your home. That's why we do a full yard treatment that keeps the stingers, clingers and biters from ruining all the fun the outdoors has to offer. </v-card-text>
                  </v-col>
             <v-col cols="4">
               <v-img class="ma-4" eager transition="scale-transition" src="@/assets/yard.png" :max-width="$vuetify.breakpoint.xs ? '5rem' : '8rem'"></v-img>      
