@@ -209,11 +209,11 @@ import ChimexFooter from '@/components/ChimexFooter.vue'
 
   @keyframes fade-in {
     from {
-      opacity: 1%;
+      opacity: 5%;
     }
 
     to {
-      opacity: 100%;
+      opacity: 99%;
     }
     
   }
