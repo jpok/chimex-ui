@@ -676,7 +676,20 @@ import ChimexFooter from '@/components/ChimexFooter.vue'
  filter: brightness(70%);
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 5%;
+  }
 
+  to {
+    opacity: 99%;
+  }  
+}
+
+.fade-in {
+    animation-duration: 4s;
+    animation-name: fade-in;
+  }
 </style>
 
         
