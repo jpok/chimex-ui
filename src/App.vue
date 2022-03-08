@@ -101,6 +101,19 @@ import QuoteForm from '@/components/QuoteForm.vue'
 import ChimexFooter from '@/components/ChimexFooter.vue'
 
   export default {  
+    name:'Chimex Eco Pest',
+    metaInfo: {
+    title: 'Chimex Eco Pest',
+    titleTemplate: '%s | Chimex Eco Pest',
+    htmlAttrs: {
+      lang: 'en-US'
+    },
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'description', content: 'Chimex eco pest control services' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+    ]
+  },
     components: { QuoteForm, ChimexFooter},
     methods: {
         closeDialog() {            
@@ -158,7 +171,7 @@ import ChimexFooter from '@/components/ChimexFooter.vue'
 }
 
 .v-dialog {
-    overflow-x: hidden;  
+    overflow: hidden;  
 }
 
 .v-application {

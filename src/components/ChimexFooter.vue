@@ -9,7 +9,7 @@
             
         </v-row>
                       
-        <v-img class="ftr-slope" src="@/assets/footer-slope.png">             
+        <v-img height="165" class="ftr-slope" src="@/assets/footer-slope.png">             
         </v-img>
         <v-img
         alt="Chimex Logo"          

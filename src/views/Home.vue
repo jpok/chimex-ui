@@ -2,28 +2,28 @@
 
   <v-container fluid class="pa-0">
 
-  <v-sheet class="primary white--text mt-2" elevation="5">
+  <v-sheet class="primary white--text pa-2" elevation="5">
     <div v-bind:class="[$vuetify.breakpoint.mobile ? 'display-1' : 'display-3']" class="font-italic">Pest Control For You</div>
   </v-sheet>  
 
 
       <div class="image-container">
-        <v-img max-height="40rem" min-height="15rem" eager transition="fade-transition" src="../assets/pest-sprayers.jpg">        
+        <v-img max-height="30rem" class="darken" min-height="15rem" eager transition="fade-transition" src="../assets/spraying-grass.jpeg">        
         </v-img>
           
         <v-container v-if="!$vuetify.breakpoint.mobile">
-          <div class="left-text-container primary--text">
+          <div class="left-text-container white--text">
             <div class="font-weight-light slide-in-left pl-6 pb-4 text-h4">High quality pest control services</div>
             <div class="font-italic fade-in font-weight-light text-h6 pl-6">
               With a low environmental impact
             </div>
           </div>
           <div class="center-text-container fade-in text-center white--text">
-            <div class="text-subtitle-1 font-weight-normal"> We are committed to protecting our customer’s homes from pests without compromising our commitment to preserve the natural environment all living creatures share</div> 
+            <div class="text-h5 font-weight-medium"> We are committed to protecting our customer’s homes from pests without compromising our commitment to preserve the natural environment all living creatures share</div> 
           </div>
           
           <div class="right-text-container slide-in-right">
-            <div class="font-weight-light text-subtitle-1 text-right primary--text">
+            <div class="font-weight-regular text-h6 text-right white--text">
               The Chimex team understands that a pest free environment is crucial to a happy and healthy home. To ensure a pest free household Chimex Eco-Pest uses only the most effective products and techniques, so that the only time you’ll think about pests is when we’re servicing your home.
             </div>
           </div>
@@ -665,12 +665,16 @@ import ChimexFooter from '@/components/ChimexFooter.vue'
     position: absolute;    
     top:3%;
     right: 1%;
-    max-width: 30rem;
+    max-width: 36rem;
   }
 
   .main-card {
     z-index: 5;
   }
+
+  .darken {
+ filter: brightness(50%);
+}
 
 
 </style>

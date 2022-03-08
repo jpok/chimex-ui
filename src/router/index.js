@@ -4,8 +4,10 @@ import Home from '../views/Home.vue'
 import Residential from '../views/Residential.vue'
 import Commercial from '../views/Commercial.vue'
 import UsAndOurProducts from '../views/UsAndOurProducts.vue'
+import VueMeta from 'vue-meta'
 
 Vue.use(VueRouter)
+Vue.use(VueMeta)
 
 const routes = [
   {

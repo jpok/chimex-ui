@@ -100,7 +100,7 @@
       </v-sheet>
       </v-col>
       
-      <v-col sm="6" md="5">
+      <v-col sm="6" class="order-first order-sm-last" md="5">
         <v-img :max-width="$vuetify.breakpoint.mobile ? $vuetify.breakpoint.width - 50: '35rem'" class="ma-4" eager transition="scale-transition" src="@/assets/residential-1.png"></v-img>      
       </v-col>
    </v-row>
