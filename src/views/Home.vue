@@ -12,32 +12,32 @@
         </v-img>
           
         <v-container v-if="!$vuetify.breakpoint.mobile">
-          <div class="left-text-container white--text">
+          <!-- <div class="left-text-container white--text">
             <div class="font-weight-light slide-in-left pl-6 pb-4 text-h4">High quality pest control services</div>
             <div class="font-italic fade-in font-weight-light text-h6 pl-6">
               With a low environmental impact
             </div>
-          </div>
-          <div class="center-text-container fade-in text-center white--text">
-            <div class="text-h5 font-weight-medium"> We are committed to protecting our customer’s homes from pests without compromising our commitment to preserve the natural environment all living creatures share</div> 
+          </div> -->
+          <div class="center-text-container fade-in text-h5 text-center white--text">
+             We are committed to protecting our customer’s homes from pests without compromising our commitment to preserve the natural environment all living creatures share
           </div>
           
-          <div class="right-text-container slide-in-right">
+          <!-- <div class="right-text-container slide-in-right">
             <div class="font-weight-regular text-h6 text-right white--text">
               The Chimex team understands that a pest free environment is crucial to a happy and healthy home. To ensure a pest free household Chimex Eco-Pest uses only the most effective products and techniques, so that the only time you’ll think about pests is when we’re servicing your home.
             </div>
-          </div>
-        </v-container>
+          </div> -->
+        </v-container> 
       </div>
 
-      <v-container v-if="$vuetify.breakpoint.mobile">
+      <v-container>
           <v-row>
             <v-col>
-            <div class="primary--text font-weight-light ma-3 text-h5 text-center">High quality pest control services</div>
-            <div class="font-weight-light font-italic secondary--text text-h6 text-center">
+            <div class="primary--text fade-in font-weight-light ma-3 text-h5 text-sm-h4 text-center">High quality pest control services</div>
+            <div class="font-weight-light fade-in font-italic secondary--text text-h6 text-center">
               With a low <span>environmental impact</span>
             </div>
-            <div class="font-weight-light text-subtitle-1 dark-gray ma-3"> We are committed to protecting our customer’s homes from pests without compromising our commitment to preserve the natural environment all living creatures share.<span class="font-italic"></span></div> 
+            <div v-if="$vuetify.breakpoint.mobile" class="font-weight-light text-subtitle-1 dark-gray ma-3"> We are committed to protecting our customer’s homes from pests without compromising our commitment to preserve the natural environment all living creatures share.<span class="font-italic"></span></div> 
             
             <div class="font-weight-light text-subtitle-1 dark-gray ma-3">
             The Chimex team understands that a pest free household is crucial to a happy and healthy home for you and your family. Chimex Eco-Pest uses only the most effective products and techniques so that the only time you’ll have to think about pests is when we’re servicing your home.
@@ -673,7 +673,7 @@ import ChimexFooter from '@/components/ChimexFooter.vue'
   }
 
   .darken {
- filter: brightness(50%);
+ filter: brightness(70%);
 }
 
 
