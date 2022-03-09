@@ -206,7 +206,7 @@ import ChimexFooter from '@/components/ChimexFooter.vue'
       width: 100%;
     }
   }
-
+/* 
   @keyframes fade-in {
     from {
       opacity: 5%;
@@ -216,7 +216,7 @@ import ChimexFooter from '@/components/ChimexFooter.vue'
       opacity: 99%;
     }
     
-  }
+  } */
 
   .slide-in-left {
     animation-duration: 3s;
@@ -228,10 +228,10 @@ import ChimexFooter from '@/components/ChimexFooter.vue'
     animation-name: slideinright;
   }
   
-  
+/*   
   .fade-in {
     animation-duration: 4s;
     animation-name: fade-in;
-  }
+  } */
 
 </style>
